@@ -1,0 +1,530 @@
+import WebGui
+from StartPage import StartPage
+WebGui.openBrowserHTML(StartPage.handle(),App.getResourceDir() + 'Mod/Start/StartPage/','Start page')
+execfile('C:/Program Files (x86)/FreeCAD0.12/Mod/Start/StartPage/PartDesign.py')
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.activeDocument().addObject('Sketcher::SketchObject','Sketch')
+App.activeDocument().Sketch.Placement = App.Placement(App.Vector(0.000000,0.000000,0.000000),App.Rotation(0.000000,0.000000,0.000000,1.000000))
+Gui.activeDocument().activeView().setCamera('#Inventor V2.1 ascii \n OrthographicCamera {\n viewportMapping ADJUST_CAMERA \n position 0 0 87 \n orientation 0 0 1  0 \n nearDistance -112.88701 \n farDistance 287.28702 \n aspectRatio 1 \n focalDistance 87 \n height 143.52005 }')
+Gui.activeDocument().setEdit('Sketch')
+App.ActiveDocument.Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(-20.146814,50.990116,0),App.Vector(0,0,1),65.250572),-2.548134,-1.538960))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Radius',0,65.250572)) 
+App.ActiveDocument.Sketch.setDatum(0,420.000000)
+App.ActiveDocument.Sketch.movePoint(0,2,App.Vector(101.361595,-87.835312,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('DistanceX',0,3,57.969568)) 
+App.ActiveDocument.Sketch.setDatum(1,0.000000)
+App.ActiveDocument.Sketch.movePoint(0,0,App.Vector(90.844658,-155.193024,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(-186.015320,-78.407639,0),App.Vector(0,0,1),55.588745),-4.831818,-2.494201))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(84.355782,-50.289017,0),App.Vector(0,0,1),65.579353),-1.337817,0.896055))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Radius',1,55.588745)) 
+App.ActiveDocument.Sketch.setDatum(2,75.000000)
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Radius',2,65.579353)) 
+App.ActiveDocument.Sketch.setDatum(3,75.000000)
+App.ActiveDocument.Sketch.addGeometry(Part.Line(App.Vector(-136.267059,16.763006,0),App.Vector(120.044800,91.385452,0)))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Horizontal',3)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,0,App.Vector(195.748657,-24.333405,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',3,2,2,2)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',1,1,3,1)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(47.585396,46.503810,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-14.059341,0.000000,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-14.059341,2.162956,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,2,App.Vector(122.211838,77.324753,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Distance',3,273.883789)) 
+App.ActiveDocument.Sketch.setDatum(7,348.000000)
+App.ActiveDocument.Sketch.movePoint(1,1,App.Vector(-207.645020,84.896530,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-3.244438,-14.059296,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('DistanceX',1,1,-210.888667)) 
+App.ActiveDocument.Sketch.setDatum(8,-174.000000)
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(17.303806,-29.200096,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addGeometry(Part.Line(App.Vector(103.822540,-94.629890,0),App.Vector(122.207710,-137.889282,0)))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(0,0,App.Vector(60.563194,-181.148651,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addGeometry(Part.Line(App.Vector(-152.489349,-138.970764,0),App.Vector(-134.104095,-96.792870,0)))
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',1,2,5,2)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',5,1,0,1)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,1,App.Vector(99.340103,-67.453354,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',4,1,2,1)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(4,2,App.Vector(107.067001,-186.556076,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Tangent',4,2,0,2)) 
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Distance',5,30.977544)) 
+App.ActiveDocument.Sketch.setDatum(13,1.000000)
+App.ActiveDocument.Sketch.movePoint(2,0,App.Vector(216.193649,-360.591614,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(0.000000,-90.349579,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(3.226624,-37.107849,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(0.000000,0.000000,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('DistanceY',3,0.000000)) 
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-8.066986,20.973999,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('DistanceY',3,0.000000)) 
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('DistanceY',1,1,-330.073798)) 
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Revolution')
+Gui.activeDocument().resetEdit()
+Gui.activeDocument().setEdit('Sketch')
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed").removeObject("Revolution")
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.activeDocument().setEdit('Revolution',0)
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+App.ActiveDocument.Sketch.movePoint(2,2,App.Vector(219.622147,-327.822357,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,0,App.Vector(180.286758,-339.295197,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(0,2,App.Vector(229.455994,-457.301117,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(1.638931,-19.667694,0),1)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(0.000000,1.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(0.000000,1.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(0.000000,1.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.delConstraint(14)
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.getDocument("Unnamed").getObject("Revolution").Visibility=True
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(0.000000,1.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Revolution")
+App.ActiveDocument.Sketch.movePoint(0,0,App.Vector(-188.296951,-413.510681,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,0,App.Vector(271.869812,-408.575928,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,1,App.Vector(182.783203,-451.599701,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(0,0,App.Vector(200.711319,-456.872681,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(0,0,App.Vector(201.238663,-456.872681,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.setDatum(13,1.000000)
+App.ActiveDocument.Sketch.setDatum(13,10.000000)
+App.ActiveDocument.Sketch.movePoint(4,0,App.Vector(-28.901657,-51.684732,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(2,1,App.Vector(251.251075,-494.967046,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(1.489266,30.778948,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(2.816806,-26.590186,0),1)
+App.ActiveDocument.recompute()
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Pad","Pad")
+App.activeDocument().Pad.Sketch = App.activeDocument().Sketch
+App.activeDocument().Pad.Length = 10.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Pad')
+App.ActiveDocument.Pad.Length = 10.000000
+App.ActiveDocument.Pad.Reversed = 0
+App.ActiveDocument.Pad.MirroredExtent = 0
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Pad")
+App.activeDocument().addObject("PartDesign::Pad","Pad")
+App.activeDocument().Pad.Sketch = App.activeDocument().Sketch
+App.activeDocument().Pad.Length = 10.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Pad')
+App.ActiveDocument.Pad.Length = 300.000000
+App.ActiveDocument.Pad.Reversed = 0
+App.ActiveDocument.Pad.MirroredExtent = 0
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+FreeCAD.ActiveDocument.addObject("Part::Chamfer","Chamfer")
+FreeCAD.ActiveDocument.Chamfer.Base = FreeCAD.ActiveDocument.Pad
+__chamfers__ = []
+__chamfers__.append((3,1.00,1.00))
+__chamfers__.append((4,1.00,1.00))
+__chamfers__.append((7,1.00,1.00))
+__chamfers__.append((9,1.00,1.00))
+__chamfers__.append((10,1.00,1.00))
+__chamfers__.append((12,1.00,1.00))
+__chamfers__.append((13,1.00,1.00))
+__chamfers__.append((16,1.00,1.00))
+__chamfers__.append((17,1.00,1.00))
+FreeCAD.ActiveDocument.Chamfer.Edges = __chamfers__
+del __chamfers__
+FreeCADGui.ActiveDocument.Pad.Visibility = False
+
+Gui.ActiveDocument.Chamfer.ShapeColor=Gui.ActiveDocument.Pad.ShapeColor
+Gui.ActiveDocument.Chamfer.LineColor=Gui.ActiveDocument.Pad.LineColor
+Gui.ActiveDocument.Chamfer.PointColor=Gui.ActiveDocument.Pad.PointColor
+App.activeDocument().addObject("PartDesign::Fillet","Fillet")
+App.activeDocument().Fillet.Base = (App.ActiveDocument.Chamfer,["Face11"])
+Gui.activeDocument().hide("Chamfer")
+Gui.activeDocument().setEdit('Fillet')
+Gui.ActiveDocument.Fillet.ShapeColor=Gui.ActiveDocument.Chamfer.ShapeColor
+Gui.ActiveDocument.Fillet.LineColor=Gui.ActiveDocument.Chamfer.LineColor
+Gui.ActiveDocument.Fillet.PointColor=Gui.ActiveDocument.Chamfer.PointColor
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().viewBottom()
+App.ActiveDocument.Fillet.Radius = 6.000000
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.activeDocument().setEdit('Fillet',0)
+App.ActiveDocument.Fillet.Radius = 6.000000
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Chamfer")
+Gui.activeDocument().setEdit('Fillet',0)
+App.ActiveDocument.Fillet.Radius = 6.000000
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.getDocument("Unnamed").removeObject("Fillet")
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+Gui.getDocument("Unnamed").getObject("Pad").Visibility=True
+Gui.getDocument("Unnamed").getObject("Pad").Visibility=False
+Gui.getDocument("Unnamed").getObject("Pad").Visibility=True
+FreeCAD.ActiveDocument.addObject("Part::Chamfer","Chamfer")
+FreeCAD.ActiveDocument.Chamfer.Base = FreeCAD.ActiveDocument.Pad
+__chamfers__ = []
+__chamfers__.append((3,1.00,1.00))
+__chamfers__.append((4,1.00,1.00))
+__chamfers__.append((6,1.00,1.00))
+__chamfers__.append((7,1.00,1.00))
+__chamfers__.append((9,1.00,1.00))
+__chamfers__.append((10,1.00,1.00))
+__chamfers__.append((12,1.00,1.00))
+__chamfers__.append((13,1.00,1.00))
+__chamfers__.append((15,1.00,1.00))
+__chamfers__.append((16,1.00,1.00))
+__chamfers__.append((17,1.00,1.00))
+__chamfers__.append((18,1.00,1.00))
+FreeCAD.ActiveDocument.Chamfer.Edges = __chamfers__
+del __chamfers__
+FreeCADGui.ActiveDocument.Pad.Visibility = False
+
+Gui.ActiveDocument.Chamfer.ShapeColor=Gui.ActiveDocument.Pad.ShapeColor
+Gui.ActiveDocument.Chamfer.LineColor=Gui.ActiveDocument.Pad.LineColor
+Gui.ActiveDocument.Chamfer.PointColor=Gui.ActiveDocument.Pad.PointColor
+App.getDocument("Unnamed").removeObject("Chamfer")
+Gui.getDocument("Unnamed").getObject("Pad").Visibility=True
+App.getDocument("Unnamed").removeObject("Pad")
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().viewAxometric()
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().viewTop()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Revolution')
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.activeDocument().setEdit('Revolution',0)
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+Gui.SendMsgToActiveView("Save")
+App.getDocument("Unnamed").FileName = "C:/Users/moha/Documents/demo.FCStd"
+App.getDocument("Unnamed").Label = "demo"
+App.getDocument("Unnamed").save()
+import FreeCAD
+FreeCAD.open("C:/Users/moha/Documents/gyuru1.FCStd")
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+Gui.getDocument("gyuru1").getObject("Revolution").Visibility=False
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.getDocument("Unnamed").removeObject("Revolution")
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.activeDocument().activeView().viewTop()
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.ActiveDocument.Sketch.delConstraint(8)
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.ActiveDocument.Sketch.setDatum(0,420.000000)
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=False
+Gui.getDocument("Unnamed").getObject("Sketch").Visibility=True
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.setActiveDocument("gyuru1")
+App.ActiveDocument=App.getDocument("gyuru1")
+Gui.ActiveDocument=Gui.getDocument("gyuru1")
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(-578.574738,92.922638,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(811.757904,-98.182373,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(-147.273579,17.532593,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(-106.948584,5.259766,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(57.857483,68.377045,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(5,0,App.Vector(-36.818398,282.274338,0),1)
+App.ActiveDocument.recompute()
+App.setActiveDocument("Unnamed")
+App.ActiveDocument=App.getDocument("Unnamed")
+Gui.ActiveDocument=Gui.getDocument("Unnamed")
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-62.196922,-138.476135,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-5.867607,100.923279,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.delConstraint(1)
+App.ActiveDocument.Sketch.movePoint(0,2,App.Vector(154.575958,-560.899780,0),0)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.addConstraint(Sketcher.Constraint('Distance',4,57.103023)) 
+App.ActiveDocument.Sketch.setDatum(12,10.000000)
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(-102.016453,-57.573639,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(32.322060,17.171112,0),1)
+App.ActiveDocument.recompute()
+App.ActiveDocument.Sketch.movePoint(3,0,App.Vector(78.785119,13.130829,0),1)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()
+App.ActiveDocument.recompute()
+App.activeDocument().addObject("PartDesign::Revolution","Revolution")
+App.activeDocument().Revolution.Sketch = App.activeDocument().Sketch
+App.activeDocument().Revolution.Axis = App.Vector(0,1,0)
+App.activeDocument().Revolution.Angle = 360.0
+App.ActiveDocument.recompute()
+Gui.activeDocument().hide("Sketch")
+Gui.activeDocument().setEdit('Revolution')
+Gui.activeDocument().activeView().viewRight()
+App.ActiveDocument().getObject("Revolution").Shape.Volume
+App.ActiveDocument.getObject("Revolution").Shape.Volume
+Gui.SendMsgToActiveView("Save")
+App.getDocument("Unnamed").save()
+App.ActiveDocument.Revolution.Angle = 360.000000
+App.ActiveDocument.Revolution.Axis = FreeCAD.Vector(1.000000,0.000000,0.000000)
+App.ActiveDocument.recompute()
+Gui.activeDocument().resetEdit()

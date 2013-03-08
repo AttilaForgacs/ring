@@ -1,0 +1,29 @@
+print 'Settings constraints'
+
+App.setActiveDocument("__Ring")
+App.ActiveDocument=App.getDocument("__Ring")
+Gui.ActiveDocument=Gui.getDocument("__Ring")
+
+
+# parameters --------------------------
+r1=76
+ring_radius = -891.3
+height=200
+width=500
+width_inner = width - 2*r1 #d = width -2*r1
+
+print 'Settings constraints'
+App.ActiveDocument.Sketch.setDatum(15,height)
+App.ActiveDocument.Sketch.setDatum(14,width_inner)
+App.ActiveDocument.Sketch.setDatum(3,r1)
+App.ActiveDocument.Sketch.setDatum(4,r1)
+App.ActiveDocument.Sketch.setDatum(13,-abs(ring_radius))
+#supress error on 2 hinges
+App.ActiveDocument.Sketch.setDatum(9,1e-2)
+App.ActiveDocument.Sketch.setDatum(10,1e-2)
+
+App.ActiveDocument.recompute()
+
+volume = App.ActiveDocument.getObject("Revolution").Shape.Volume
+print "VOLUME: %.2f mm3"%(volume/10**6)
+print (526.96 / 526191216.804)

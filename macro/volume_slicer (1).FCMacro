@@ -1,0 +1,138 @@
+import FreeCAD
+import math
+import time
+import FreeCADGui
+
+###############
+#Profile 1 
+#FreeCAD.ActiveDocument.MyObjectName.touch()
+
+try:
+	FreeCAD.open(r"C:\Users\attila\Desktop\ring\2\pr_001_v4.FCStd")
+except IOError as e:
+	pass
+
+#App.setActiveDocument("pr_001")
+
+f = open(r'C:\Users\attila\Desktop\ring\p1_slices.csv','w')
+f.write('r61,r40,r41,r51,cf,index,volume\n')
+
+paramsfile = open(r'C:\Users\attila\Desktop\ring\parameter_profile_1_to_6.csv', 'r')
+header=paramsfile.readline()
+
+def constraint(index,value):
+	print 'constraint set[',index,']   to ',value
+	App.ActiveDocument.Sketch.setDatum(index-1,value)
+ 	App.ActiveDocument.recompute()
+
+
+count=0
+
+while True:
+	param_time_1 = time.time()
+	paramsline=paramsfile.readline()
+	print 'CSV:',paramsline
+	paramsarray=paramsline.split(',')
+	profile = paramsarray[0]
+	if profile!='PR_001': break
+	r51 = float(paramsarray[1]) * 100.0   #def: 300.	
+	r52 =      (paramsarray[2]) #skip n/a
+	r60 =      (paramsarray[3]) #skip n/a    
+	r61 = float(paramsarray[4]) * 100.0   #def: 357.
+	r20 =      (paramsarray[5]) #skip n/a
+	r40 = float(paramsarray[6]) * 100.0 #def: 40.
+	r41 = float(paramsarray[7]) * 100.0 #def: 23.
+	count += 1
+	print 'no(%s) r51=%s r61=%s r40=%s r41=%s' % (
+		count, r51, r61, r40, r41	
+	)
+
+	inner_width = r51 - 2.0 * r40
+	
+			
+	for cf in range(4500,7400+1,50):
+		r=cf/(2*math.pi)
+		__t1 = time.time()		
+		try:
+			constraint(1,  r61)
+			constraint(3,  r40)
+			constraint(4,  r40)			
+			constraint(7, -abs(r))			
+			constraint(8,  inner_width)			
+			constraint(9,  r40)
+			constraint(10, r41)
+			constraint(19, r41)
+			App.ActiveDocument.recompute()
+		except ValueError as e:
+			print "SKIPPING ROW invalid datum in constraint"
+			print e	
+			print 
+			time.sleep(3)
+			continue
+		
+		if cf == 4500:
+			Gui.activeDocument().activeView().saveVectorGraphic(r'C:\Users\attila\Desktop\profile1_%s_%s_%s_%s_%s.svg'%(r61/10**2,r40/10**2,r41/10**2,r51/10**2,cf/10**2))
+			try:
+				a=raw_input('??')
+			except:
+				pass
+			#Gui.activeDocument().activeView().saveImage(r'C:\Users\attila\Desktop\profile1_%s_%s_%s_%s_%s.png'%(r61/10**2,r40/10**2,r41/10**2,r51/10**2,cf/10**2),1648,791,'Current')
+			break
+
+			
+		whole_volume = App.ActiveDocument.Revolution.Shape.Volume
+		previous = 0
+		cut = whole_volume
+		volumes=[]
+	
+		print 'r51',int(r51)
+		for padlength in range(int(r51),-1,-10):
+			if padlength==0:
+				print padlength,':',whole_volume
+				volumes.append(whole_volume)
+			else:
+				App.ActiveDocument.Pad.Length = float(padlength)
+				App.ActiveDocument.recompute()
+				cut = App.ActiveDocument.Cut.Shape.Volume	
+				#slice = cut-previous
+				#all_volume += slice
+				#previous = cut
+				volumes.append(cut)
+				print padlength,':',cut
+	
+
+
+
+		vdiffs = []
+		all_volume = 0.0
+		for i,v in enumerate(volumes):		
+			if i>=1:
+				diff = volumes[i] - volumes[i-1]
+				all_volume += diff
+				vdiffs.append( diff )
+			else:
+				diff = volumes[i]
+				all_volume += diff
+				vdiffs.append( diff )
+	
+			f.write('%s,%s,%s,%s,%s,%s,%s \n'%(r61/10**2,r40/10**2,r41/10**2,r51/10**2,cf/10**2,i,diff/10**6)) 
+			f.flush()
+				
+	
+	 	
+
+		print 'all:',	all_volume 
+		print 'whole:', whole_volume
+		print 'diff',   (whole_volume-all_volume)
+		#print "\n".join(map(str,vdiffs))
+		
+	
+	
+		__t2 = time.time()
+		print __t2-__t1,' seconds'
+
+	param_time_2 = time.time()
+	print 'TOTAL === ', (param_time_2-param_time_1), 'sec'
+
+	
+f.close()
