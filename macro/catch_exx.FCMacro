@@ -1,0 +1,9 @@
+try:
+	print App.ActiveDocument.Sketch.touch()
+except:
+	print "EXXX-1"
+
+try:
+	print App.ActiveDocument.recompute()
+except:
+	print "EXXX-2"
