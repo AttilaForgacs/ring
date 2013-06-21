@@ -3,10 +3,13 @@
 
 # <codecell>
 
+from pylab import *
+
 from collections import *
+
 from math import *
 from numpy import array, cos, sin
-from pylab import *
+
 import functools
 import scipy
 import sympy
@@ -17,8 +20,8 @@ from IPython.display import Image
 from scipy.integrate import quad
 #degrees = 180 * radians / pi
 #radians = pi * degrees / 180
-%pylab
-%load_ext sympy.interactive.ipythonprinting
+#%pylab
+#%load_ext sympy.interactive.ipythonprinting
 from decimal import *
 def assert_floats_equal(a,b):
     return Decimal(a) == Decimal(b)
@@ -53,14 +56,14 @@ assert area_triangle(P(6,27), P(44,17), P(33,-13)) - 625 == 0
 
 f_top_arc=lambda x,C,r:  C.y + ( sqrt(r-(x-C.x)**2) )
 rng=arange(0,2,0.0001)
-figsize(5,5)
+plt.figsize(5,5)
 plot(map(lambda x:f_top_arc(x,P(1,1),1),rng))
 
 # <codecell>
 
 f_bottom_arc=lambda x,C,r:  (C.y - ( sqrt(r-(x-C.x)**2) ))
 rng=arange(0,2,0.0001)
-figsize(5,5)
+plt.figsize(5,5)
 plot(map(lambda x:f_bottom_arc(x,P(1,1),1),rng))
 
 # <codecell>
