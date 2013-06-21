@@ -54,7 +54,9 @@ assert area_triangle(P(6,27), P(44,17), P(33,-13)) - 625 == 0
 
 # <codecell>
 
-f_top_arc=lambda x,C,r:  C.y + ( sqrt(r-(x-C.x)**2) )
+def f_top_arc(x,C,r):  
+    #print x,C,r 
+    return C.y + ( sqrt(r-(x-C.x)**2) )
 rng=arange(0,2,0.0001)
 plt.figsize(5,5)
 plot(map(lambda x:f_top_arc(x,P(1,1),1),rng))
