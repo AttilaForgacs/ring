@@ -20,22 +20,33 @@ init_printing()
 
 # <codecell>
 
-W  = 6. #R51 
-H  = 1.8 #R52
-RI = 7.4  
+
+#W  = 5.    #R51 
+#H  = 1.5   #R52
+#RI = (56. / (2.*pi) )
+
+W  = 5.      #R51 
+H  = 1.5     #R52
+RI = (56. / (2.*3.1415) )
+
+
 bbc_R  = 6.38
 btc_R  = 6.38
+
 # calculated
 bbc_CX = W/2.
 bbc_CY = RI + bbc_R
 btc_CX = W/2.
 btc_CY = RI + H - btc_R
+
 lsc_R  = Symbol('lsc_R',positive=True)
 lsc_CX = Symbol('lsc_CX')
 lsc_CY = Symbol('lsc_CY')
 rsc_R  = Symbol('rsc_R',positive=True)
 rsc_CX = Symbol('rsc_CX')
 rsc_CY = Symbol('rsc_CY')
+W,H,RI
+bbc_CX,bbc_CY,btc_CX,btc_CY
 
 # <codecell>
 
@@ -63,6 +74,7 @@ def _2_circles_tangential_equations(c1,c2,var_name,variables_list):
     eq_c2 = (X - c2_CX) ** 2 + (Y - c2_CY) ** 2 - c2_R ** 2
     eq_line = (Y - c2_CY) * (c1_CX - c2_CX) - (X - c2_CX) * (c1_CY - c2_CY)
     return [eq_c1, eq_c2, eq_line]
+(eq_left_tang, eq_right_tang)
 
 # <codecell>
 
@@ -124,15 +136,20 @@ def mk_circle(x,y,r,**kwargs):
 mk_circle(bbc_CX,bbc_CY,bbc_R)
 mk_circle(btc_CX,btc_CY,btc_R)
 
+'''
 for s in filtered_solutions:
     mk_circle( s[lsc_CX],s[lsc_CY],s[lsc_R],color='r')
     mk_circle( s[rsc_CX],s[rsc_CY],s[rsc_R],color='g')
-    
+'''   
+
+
 #line1 = plt.Line2D([plot_x,bbc_CX],[plot_y,plot_cy])
 #plt.gcf().gca().add_artist(line1)
 
+'''
 assert len (filtered_solutions) == 1
 S = filtered_solutions[0]
+'''
 
 plt.show()
 
@@ -146,33 +163,29 @@ P(S[lsc_CX],S[lsc_CY])
 
 # <codecell>
 
-volume = __builtin__.sum (
-   [integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),
-   integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')])]
-) - 0
-
-#btc_CX,btc_CY
-#S[Symbol('p1_X')], S[Symbol('p2_X')], btc_CX,btc_R,
+volume = __builtin__.sum ([
+   volume_integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),
+   volume_integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')]),
+   volume_integrate_arc_top(P(S[rsc_CX],S[rsc_CY]), S[rsc_R], S[Symbol('p2_X')], W),
+]) - __builtin__.sum ([
+   volume_integrate_arc_bottom(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0. , S[Symbol('p3_X')]),
+   volume_integrate_arc_bottom(P(btc_CX,btc_CY), btc_R, S[Symbol('p3_X')], S[Symbol('p4_X')]),
+   volume_integrate_arc_bottom(P(S[rsc_CX],S[rsc_CY]), S[rsc_R], S[Symbol('p4_X')], W),             
+])                       
 
 volume
 
-# <codecell>
+# <rawcell>
 
-#%run integral.py
-integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')])
-
-# <codecell>
-
-(0.211 - 3)**2
-S[Symbol('p1_X')],S[Symbol('p2_X')]
-
-# <codecell>
-
-rng=arange(S[Symbol('p1_X')], S[Symbol('p2_X')] ,0.01)
-plt.figure(111)
-plt.figsize(5,5)
-plot(map(lambda x:f_top_arc(x,P(btc_CX,btc_CY),btc_R),rng))
-
-# <codecell>
-
+# So far I have  only send you the final data for profiles p2-p6.
+# (but maybe you are reffering to the structure PDF TR_7.pdf)
+#  
+# For those profiles I have sent you the volume-values to quick validate the calculations
+#  
+# Volume:
+# Profile P2:     width: 4     height:2        ringwidth/inner circumfence 56     volume:0,396 cm³
+# Profile P3:     width: 5     height:1,5     ringwidth/inner circumfence 56     volume:0,336 cm³
+# Profile P4:     width: 7     height:3        ringwidth/inner circumfence 56     volume:1,155 cm³
+# Profile P5:     width: 3     height:1        ringwidth/inner circumfence 56     volume:0,144 cm³
+# Profile P6:     width: 6     height:2,5     ringwidth/inner circumfence 56     volume:0,758 cm³
 
