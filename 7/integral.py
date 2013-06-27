@@ -55,11 +55,19 @@ assert area_triangle(P(6,27), P(44,17), P(33,-13)) - 625 == 0
 # <codecell>
 
 def f_top_arc(x,C,r):  
-    #print x,C,r 
-    return C.y + ( sqrt(r-(x-C.x)**2) )
-rng=arange(0,2,0.0001)
+    """ @param x independent var
+        @param C circle mid point
+        @param r radius
+    """
+    try:
+        y = C.y + ( sqrt(r**2-(x-C.x)**2) )
+    except:
+        #print x,C,r
+        y = 0.
+    return y
+rng=arange(0.13,20,0.01)
 plt.figsize(5,5)
-plot(map(lambda x:f_top_arc(x,P(1,1),1),rng))
+plot(map(lambda x:f_top_arc(x,P(3,2.82),6.38),rng))
 
 # <codecell>
 

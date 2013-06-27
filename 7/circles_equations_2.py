@@ -7,7 +7,7 @@ from sympy import *
 import numpy as np
 import scipy as sp
 %load_ext sympyprinting
-#%load_ext sympy.interactive.ipythonprinting
+#%load_ext sympy.interactive.ipythonprintingthonprinting
 #%pylab inline
 from __future__ import division
 init_printing()
@@ -146,17 +146,20 @@ P(S[lsc_CX],S[lsc_CY])
 
 # <codecell>
 
-if 0 : volume = sum (
-   integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),
-   integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')]),
+volume = __builtin__.sum (
+   [integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),
+   integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')])]
 ) - 0
 
-btc_CX,btc_CY
-S[Symbol('p1_X')], S[Symbol('p2_X')], btc_CX,btc_R,
+#btc_CX,btc_CY
+#S[Symbol('p1_X')], S[Symbol('p2_X')], btc_CX,btc_R,
+
+volume
 
 # <codecell>
 
-integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')]),
+#%run integral.py
+integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')])
 
 # <codecell>
 
