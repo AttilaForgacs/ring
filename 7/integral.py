@@ -62,16 +62,15 @@ def f_top_arc(x,C,r):
     try:
         y = C.y + ( sqrt(r**2-(x-C.x)**2) )
     except:
-        #print x,C,r
-        y = 0.
+        y = 0.       
     return y
-rng=arange(0.13,20,0.01)
+rng=arange(0,4.,0.01)
 plt.figsize(5,5)
-plot(map(lambda x:f_top_arc(x,P(3,2.82),6.38),rng))
+plot(map(lambda x:f_top_arc(x,P(2,0),2),rng))
 
 # <codecell>
 
-f_bottom_arc=lambda x,C,r:  (C.y - ( sqrt(r-(x-C.x)**2) ))
+f_bottom_arc=lambda x,C,r:  (C.y - ( sqrt(r**2-(x-C.x)**2) ))
 rng=arange(0,2,0.0001)
 plt.figsize(5,5)
 plot(map(lambda x:f_bottom_arc(x,P(1,1),1),rng))
@@ -83,11 +82,22 @@ Image(url='http://upload.wikimedia.org/math/4/8/3/483efae2397ac62560aa6f61d4e2e8
 # <codecell>
 
 def integrate_arc_top(C, r, a, b):
-    return pi * ( quad( lambda z: f_top_arc (z,C,r)**2 , a , b  ) [0] )
+    return quad( lambda z: f_top_arc (z,C,r) , a , b  ) [0] 
+
 def integrate_arc_bottom(C, r, a, b):
+    return quad( lambda z: f_bottom_arc (z,C,r) , a , b  ) [0] 
+
+def volume_integrate_arc_top(C, r, a, b):
+    return pi * ( quad( lambda z: f_top_arc (z,C,r)**2 , a , b  ) [0] )
+
+def volume_integrate_arc_bottom(C, r, a, b):
     return pi * ( quad( lambda z: f_bottom_arc (z,C,r)**2 , a , b  ) [0] )
+
 assert integrate_arc_top( P(2,0), 1, 2,3 ) - ((4./3.)*pi/2) <= 0 # half sphere
 assert integrate_arc_bottom( P(2,0), 1, 2,3 ) - ((4./3.)*pi/2) <= 0 # half sphere
+
+assert abs(  integrate_arc_top(P(2.,0), r=2., a=0.,b=4.) - (2**2*pi)/2 ) <= 0.000000000001
+assert abs(  abs(integrate_arc_bottom(P(2.,0), r=2., a=0.,b=4.)) - (2**2*pi)/2 ) <= 0.0000000001
 
 # <codecell>
 
