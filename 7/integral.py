@@ -65,7 +65,7 @@ def f_top_arc(x,C,r):
         y = 0.       
     return y
 rng=arange(0,4.,0.01)
-plt.figsize(5,5)
+plt.figsize(10,5)
 plot(map(lambda x:f_top_arc(x,P(2,0),2),rng))
 
 # <codecell>
@@ -88,16 +88,23 @@ def integrate_arc_bottom(C, r, a, b):
     return quad( lambda z: f_bottom_arc (z,C,r) , a , b  ) [0] 
 
 def volume_integrate_arc_top(C, r, a, b):
-    return pi * ( quad( lambda z: f_top_arc (z,C,r)**2 , a , b  ) [0] )
+    return pi * ( quad( lambda z: (f_top_arc (z,C,r)**2) , a , b  ) [0] )
 
 def volume_integrate_arc_bottom(C, r, a, b):
-    return pi * ( quad( lambda z: f_bottom_arc (z,C,r)**2 , a , b  ) [0] )
+    return pi * ( quad( lambda z: (f_bottom_arc (z,C,r)**2) , a , b  ) [0] )
 
-assert integrate_arc_top( P(2,0), 1, 2,3 ) - ((4./3.)*pi/2) <= 0 # half sphere
-assert integrate_arc_bottom( P(2,0), 1, 2,3 ) - ((4./3.)*pi/2) <= 0 # half sphere
+def vol_sphere(r):
+    return (4./3.) * pi * (r ** 3)
 
-assert abs(  integrate_arc_top(P(2.,0), r=2., a=0.,b=4.) - (2**2*pi)/2 ) <= 0.000000000001
-assert abs(  abs(integrate_arc_bottom(P(2.,0), r=2., a=0.,b=4.)) - (2**2*pi)/2 ) <= 0.0000000001
+res_top=volume_integrate_arc_top( P(-1,0), 1. , -2, 0)
+res_bottom=volume_integrate_arc_bottom( P(-1,0), 1., -2, 0)
+print vol_sphere(1),'vs',res_top
+print res_bottom
+
+res2_top=volume_integrate_arc_top( P(-1,0), 2. , -3, 1)
+res2_bottom=volume_integrate_arc_bottom( P(-1,0), 2., -3, 1)
+print 'r2=',res2_top,res2_bottom
+print 'sphere(2)=',vol_sphere(2)
 
 # <codecell>
 

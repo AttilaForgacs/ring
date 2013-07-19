@@ -20,13 +20,15 @@ init_printing()
 
 # <codecell>
 
-#Profile P6:     width: 6     height:2,5     ringwidth/inner circumfence 56     volume:0,758 cm³
 
-#R51, R52
-W,H  = 5. , 1.5     
-CF = 56
-RI = (CF / (2.*pi) )
-RI = round(RI,4)
+#W  = 5.    #R51 
+#H  = 1.5   #R52
+#RI = (56. / (2.*pi) )
+
+W  = 5.      #R51 
+H  = 1.5     #R52
+RI = (56. / (2.*3.1415) )
+
 
 bbc_R  = 6.38
 btc_R  = 6.38
@@ -98,12 +100,8 @@ variables
 
 #from sympy import ask, Q
 #global_assumptions.add(Q.positive(lsc_R))
-import time
 
-t1=time.time()
 solutions = solve(   eq_system , *variables , dict=True )
-t2=time.time()
-print 'Solution: %s seconds'%(t2-t1)
 
 # <codecell>
 
@@ -138,19 +136,21 @@ def mk_circle(x,y,r,**kwargs):
 mk_circle(bbc_CX,bbc_CY,bbc_R)
 mk_circle(btc_CX,btc_CY,btc_R)
 
-
+'''
 for s in filtered_solutions:
     mk_circle( s[lsc_CX],s[lsc_CY],s[lsc_R],color='r')
     mk_circle( s[rsc_CX],s[rsc_CY],s[rsc_R],color='g')
-   
+'''   
 
 
 #line1 = plt.Line2D([plot_x,bbc_CX],[plot_y,plot_cy])
 #plt.gcf().gca().add_artist(line1)
 
-
+'''
 assert len (filtered_solutions) == 1
 S = filtered_solutions[0]
+'''
+
 plt.show()
 
 # <codecell>
