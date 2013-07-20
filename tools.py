@@ -1,14 +1,15 @@
 #coding: utf-8
 import csv
-from pylab import *
-from collections import *
+from pylab import arccos, plot, arange
+from collections import namedtuple
 from scipy.integrate import quad
 from math import *
 from collections import *
 #degrees = 180 * radians / pi
 #radians = pi * degrees / 180
 from config import RING_PROFILES_DB_PATH
-from sympy import *
+import sympy
+from sympy import Symbol
 
 P = namedtuple('Point', ['x', 'y']);
 
@@ -21,7 +22,7 @@ def test_eq(a, b):
 
 
 def vector_length(pa, pb):
-    return sqrt((pa.x - pb.x) ** 2 + (pa.y - pb.y) ** 2)
+    return sympy.sqrt((pa.x - pb.x) ** 2 + (pa.y - pb.y) ** 2)
 
 
 def get_angle_between_3_points(pc, p1, p2):
@@ -49,13 +50,13 @@ def f_top_arc(x, C, r):
         @param r radius
     """
     try:
-        y = C.y + ( sqrt(r ** 2 - (x - C.x) ** 2) )
+        y = C.y + ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
     except:
         y = 0.
     return y
 
 
-f_bottom_arc = lambda x, C, r: (C.y - ( sqrt(r ** 2 - (x - C.x) ** 2) ))
+f_bottom_arc = lambda x, C, r: (C.y - ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) ))
 
 
 def integrate_arc_top(C, r, a, b):
@@ -76,13 +77,13 @@ def integrate_slope(x1, y1, x2, y2, a, b):
 
 def volume_integrate_arc_top(C, r, a, b):
     rng = arange(a, b, INTEGRATE_STEP)
-    #plot(rng, map(lambda z: f_top_arc(z, C, r), rng))
+    plot(rng, map(lambda z: f_top_arc(z, C, r), rng))
     return pi * ( quad(lambda z: (f_top_arc(z, C, r) ** 2), a, b)[0] )
 
 
 def volume_integrate_arc_bottom(C, r, a, b):
     rng = arange(a, b, INTEGRATE_STEP)
-    #plot(rng, map(lambda z: f_bottom_arc(z, C, r), rng))
+    plot(rng, map(lambda z: f_bottom_arc(z, C, r), rng))
     return pi * ( quad(lambda z: (f_bottom_arc(z, C, r) ** 2), a, b)[0] )
 
 
@@ -109,6 +110,7 @@ def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     var_name: string, independent will be created
     '''
     G = context
+
     c1_CX = G['{}_CX'.format(c1)]
     c1_CY = G['{}_CY'.format(c1)]
     c1_R = G['{}_R'.format(c1)]
@@ -116,22 +118,34 @@ def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     c2_CX = G['{}_CX'.format(c2)]
     c2_CY = G['{}_CY'.format(c2)]
     c2_R = G['{}_R'.format(c2)]
+
     X = Symbol(var_name + '_X')
     Y = Symbol(var_name + '_Y')
-    variables_list += [X, Y]
+
+    variables_list.extend([X, Y])
+    context[X] = X
+    context[Y] = Y
+
     eq_c1 = (X - c1_CX) ** 2 + (Y - c1_CY) ** 2 - c1_R ** 2
     eq_c2 = (X - c2_CX) ** 2 + (Y - c2_CY) ** 2 - c2_R ** 2
     eq_line = (Y - c2_CY) * (c1_CX - c2_CX) - (X - c2_CX) * (c1_CY - c2_CY)
+
     return [eq_c1, eq_c2, eq_line]
 
 
 class RingParams(object):
     def __str__(self):
-        return 'PR={} MDL={} W={} H={}'.format(
+        return 'PR={} MDL={} RI={} W={} H={} R60={} R61={} R20={} R40={} R41={}'.format(
             self.PROFILE,
             self.MODEL,
+            self.RI,
             self.W,
-            self.H
+            self.H,
+            self.R60,
+            self.R61,
+            self.R20,
+            self.R40,
+            self.R41,
         )
 
     def __init__(self, W=0, H=0, CF=0, PROFILE=''):
@@ -142,8 +156,8 @@ class RingParams(object):
         self.CF = CF
         self.PROFILE = PROFILE
         #calculated
-        self.RI = CF / 2. * pi
-        self.RI = round(self.RI, 5)
+        self.RI = CF / (2. * pi)
+        self.RI = round(self.RI, 6)
         #looked up
         self.MODEL = None
         self.R60 = None

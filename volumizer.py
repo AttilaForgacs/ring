@@ -25,16 +25,25 @@ from models import *
 # RI=inner ring radius
 
 profiles_definiton = load_profiles_lookup_table({})
-ring_config = RingParams(W=3., H=1., CF=56, PROFILE='PR_005')
+ring_config = RingParams(W=5., H=1.5, CF=56., PROFILE='PR_003')
 ring_config.lookup_definition(profiles_definiton)
+
+print 'Using configuration:'
+print ring_config
 
 context = Context()
 model = globals()[ring_config.MODEL](params=ring_config, context=context)
 model.create_equations()
 
 print context
+print 'vars:'
 print model.context.variables
+print
+print
+print 'eq:'
 print model.context.equations
+print
+print
 
 solutions = model.solve()
 

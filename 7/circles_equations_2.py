@@ -31,16 +31,16 @@ Profile P6:     width: 6     height:2,5     ringwidth/inner circumfence 56     v
 '''
 
 #R51, R52
-W=3.
-H=1.
+W=5.
+H=1.5
 CF = 56
 RI = (CF / (2.*pi) )
 RI = round(RI,6)
 
 #R60
-bbc_R  = 5.2
+bbc_R  = 6.38
 #R61
-btc_R  = 25.6
+btc_R  = 6.38
 
 # <codecell>
 

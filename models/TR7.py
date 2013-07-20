@@ -1,8 +1,9 @@
 import __builtin__
 from models import BaseModel
 from sympy import Symbol, solve
-from tools import _2_circles_tangential_equations, volume_integrate_arc_top, volume_integrate_arc_bottom, P
-
+import sympy
+from tools import *
+from tools import _2_circles_tangential_equations
 
 class TR7(BaseModel):
     def __init__(self, params=None, context=None):
@@ -54,7 +55,7 @@ class TR7(BaseModel):
         super(TR7, self).start()
         c = self.context
         p = self.params
-        solutions = solve(c.equations, *c.variables, dict=True)
+        solutions = sympy.solve(c.equations, *c.variables, dict=True)
         super(TR7, self).stop()
         filtered_solutions = [s for s in solutions
                               if
@@ -71,14 +72,11 @@ class TR7(BaseModel):
         c = self.context
         p = self.params
 
-        import ipdb
-        ipdb.set_trace()
-
-
         top = __builtin__.sum([
             volume_integrate_arc_top(P(S[c['lsc_CX']], S[c['lsc_CY']]),
-                                     S[c['lsc_R']], 0.,
-                                     S[Symbol('p1_X')]),
+                                     S[c['lsc_R']],
+                                     0.,S[Symbol('p1_X')]
+            ),
 
             volume_integrate_arc_top(P(c['btc_CX'], c['btc_CY']), c['btc_R'],
                                      S[Symbol('p1_X')], S[Symbol('p2_X')]),
