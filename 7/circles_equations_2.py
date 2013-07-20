@@ -172,6 +172,10 @@ plt.show()
 
 # <codecell>
 
+plt.figsize(20,10)
+plt.gca().set_xlim(-2*100,W*100)
+
+
 top = __builtin__.sum ([
    volume_integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),
    volume_integrate_arc_top(P(btc_CX,btc_CY), btc_R, S[Symbol('p1_X')], S[Symbol('p2_X')]),

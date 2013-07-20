@@ -28,6 +28,10 @@ def assert_floats_equal(a,b):
 
 # <codecell>
 
+INTEGRATE_STEP = 0.001
+
+# <codecell>
+
 def vector_length(pa,pb):
     return sqrt( (pa.x - pb.x)**2 + (pa.y - pb.y)**2 )
 def get_angle_between_3_points(pc, p1, p2):
@@ -88,9 +92,13 @@ def integrate_arc_bottom(C, r, a, b):
     return quad( lambda z: f_bottom_arc (z,C,r) , a , b  ) [0] 
 
 def volume_integrate_arc_top(C, r, a, b):
+    rng = arange(a,b,INTEGRATE_STEP)
+    plot(rng,map(lambda z:f_top_arc(z,C,r), rng ))
     return pi * ( quad( lambda z: (f_top_arc (z,C,r)**2) , a , b  ) [0] )
 
 def volume_integrate_arc_bottom(C, r, a, b):
+    rng = arange(a,b,INTEGRATE_STEP)
+    plot(rng,map(lambda z:f_bottom_arc(z,C,r), rng ))
     return pi * ( quad( lambda z: (f_bottom_arc (z,C,r)**2) , a , b  ) [0] )
 
 def vol_sphere(r):
