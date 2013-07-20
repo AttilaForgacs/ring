@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ring.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TR7.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/volumizer.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/Untitled0.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/circles_equations.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Certificate Revocation Lists" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Archived History" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Archived History-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/data_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/data_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/data_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/data_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00000f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000015" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000016" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000017" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000018" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000019" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00001f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000021" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000022" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000023" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000024" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000026" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000027" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000028" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000029" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00002f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000030" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000031" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000032" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000033" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000034" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000035" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000036" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000037" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000038" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000039" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00003f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000041" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000042" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000043" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000044" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000045" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000046" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000047" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000048" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000049" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00004f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000050" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000051" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000052" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000053" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000054" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000055" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000056" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000057" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000058" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000059" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00005a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00005b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00005d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00005e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00005f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000061" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000062" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000063" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000064" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000065" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000066" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000067" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000068" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000069" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00006f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000070" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000071" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000072" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000073" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000074" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000075" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000076" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000077" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000078" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000079" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00007f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000081" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000082" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000083" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000084" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000085" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000086" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000087" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000088" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000089" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00008f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000090" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000091" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000092" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000093" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000094" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000095" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000096" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000097" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000098" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_000099" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_00009f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000a9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/f_0000af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cache/index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cookies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Cookies-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Current Session" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Current Tabs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension Rules/000003.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension Rules/CURRENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension Rules/LOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension Rules/LOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension Rules/MANIFEST-000002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension State/000003.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension State/CURRENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension State/LOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension State/LOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extension State/MANIFEST-000002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/aohghmighlieiainnegkcijnfilokake/0.0.0.6_0/icon_128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/aohghmighlieiainnegkcijnfilokake/0.0.0.6_0/icon_16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/aohghmighlieiainnegkcijnfilokake/0.0.0.6_0/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/aohghmighlieiainnegkcijnfilokake/0.0.0.6_0/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/aohghmighlieiainnegkcijnfilokake/0.0.0.6_0/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ar/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/bg/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ca/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/cs/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/da/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/de/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/el/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/en_GB/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/en_US/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/es/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/es_419/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/et/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/eu/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/fi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/fil/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/fr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/he/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/hi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/hr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/hu/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/id/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/it/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ja/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ko/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/lt/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/lv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ms/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/nl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/no/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/pl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/pt_BR/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/pt_PT/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ro/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/ru/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/sk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/sl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/sr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/sv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/th/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/tr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/uk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/vi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/zh_CN/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/_locales/zh_TW/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/apdfllckaahabafndbhieahigkjlhalf/6.2_0/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ar/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/bg/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ca/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/cs/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/da/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/de/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/el/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/en/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/es/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/fi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/fil/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/fr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/he/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/hi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/hr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/hu/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/id/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/it/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ja/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ko/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/lt/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/lv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/nl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/no/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/pl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/pt_BR/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/pt_PT/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ro/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/ru/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/sk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/sl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/sr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/sv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/th/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/tr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/uk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/vi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/zh_CN/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/_locales/zh_TW/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.5_0/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ar/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/bg/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ca/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/cs/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/da/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/de/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/el/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/en/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/en_GB/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/en_US/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/es/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/es_419/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/et/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/fi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/fil/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/fr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/he/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/hi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/hr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/hu/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/id/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/it/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ja/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ko/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/lt/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/lv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/nl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/no/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/pl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/pt_BR/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/pt_PT/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ro/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/ru/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/sk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/sl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/sr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/sv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/th/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/tr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/uk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/vi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/zh_CN/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/_locales/zh_TW/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.19_0/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ar/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/bg/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ca/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/cs/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/da/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/de/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/el/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/en/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/es/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/fi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/fil/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/fr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/hi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/hr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/hu/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/id/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/it/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ja/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ko/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/lt/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/lv/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/nl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/no/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/pl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/pt_BR/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/pt_PT/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ro/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/ru/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/se/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/sk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/sl/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/sr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/th/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/tr/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/uk/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/vi/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/zh_CN/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/_locales/zh_TW/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Extensions/pjkljhegncpnkpknbcohdijeoejaedia/7_0/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Favicons" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Favicons-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/GPUCache/data_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/GPUCache/data_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/GPUCache/data_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/GPUCache/data_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/GPUCache/index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History Index 2013-05" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History Index 2013-06" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History Index 2013-07" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History Provider Cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/History-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_disqus.com_0.localstorage" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_disqus.com_0.localstorage-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_en.wikipedia.org_0.localstorage" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_en.wikipedia.org_0.localstorage-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_www.cut-the-knot.org_0.localstorage" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_www.cut-the-knot.org_0.localstorage-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_www.youtube.com_0.localstorage" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/http_www.youtube.com_0.localstorage-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/https_www.google.hu_0.localstorage" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Local Storage/https_www.google.hu_0.localstorage-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Login Data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Login Data-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/data_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/data_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/data_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/data_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/f_000001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/f_000002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/f_000003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/f_000004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Media Cache/index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Network Action Predictor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Network Action Predictor-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Origin Bound Certs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Origin Bound Certs-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Pepper Data/Shockwave Flash/WritableRoot/#SharedObjects/KMLG42EB/macromedia.com/support/flashplayer/sys/#s.ytimg.com/settings.sol" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Pepper Data/Shockwave Flash/WritableRoot/#SharedObjects/KMLG42EB/macromedia.com/support/flashplayer/sys/settings.sol" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Preferences" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Session Storage/000003.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Session Storage/CURRENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Session Storage/LOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Session Storage/LOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Session Storage/MANIFEST-000002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Shortcuts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Shortcuts-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Top Sites" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Top Sites-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/TransportSecurity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/User StyleSheets/Custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Visited Links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Web Data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Default/Web Data-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Dictionaries/en-US-3-0.bdic" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/First Run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Local State" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Bloom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Bloom Prefix Set" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Cookies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Cookies-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Csd Whitelist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Download" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Download Whitelist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Safe Browsing Extension Blacklist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonCookie" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonLock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonSocket" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/circles_equations_2.ipynb" afterPath="$PROJECT_DIR$/7/circles_equations_2.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/circles_equations_2.py" afterPath="$PROJECT_DIR$/7/circles_equations_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/integral.ipynb" afterPath="$PROJECT_DIR$/7/integral.ipynb" />
+    </list>
+    <ignored path="ring.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374319941835" ignored="false" />
+    <file path="/volumizer.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374328756717" ignored="false" />
+    <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321519512" ignored="false" />
+    <file path="/config.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374320660899" ignored="false" />
+    <file path="/TR_7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321819894" ignored="false" />
+    <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321960493" ignored="false" />
+    <file path="/TR7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374331588353" ignored="false" />
+    <file path="/Python Console" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374330368299" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ring" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="volumizer.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volumizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="20" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TR7.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/TR7.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="34" selection-start="3874" selection-end="3874" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="8" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.85040796">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/models/TR_7.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/volumizer.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/models/TR7.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1677" />
+    <option name="width" value="1926" />
+    <option name="height" value="1177" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.volumizer">
+    <configuration default="false" name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="volumizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/volumizer.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.tools" />
+      <item index="1" class="java.lang.String" itemvalue="Python.volumizer" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.volumizer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tools" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="" />
+      <created>1374319957873</created>
+      <updated>1374319957873</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1677" y="0" width="1926" height="1177" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.60053146" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39946857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="34" selection-start="3874" selection-end="3874" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volumizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="8" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.85040796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

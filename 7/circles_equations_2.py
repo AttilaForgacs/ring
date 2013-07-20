@@ -56,6 +56,10 @@ lsc_CY = Symbol('lsc_CY')
 rsc_R  = Symbol('rsc_R',positive=True)
 rsc_CX = Symbol('rsc_CX')
 rsc_CY = Symbol('rsc_CY')
+
+#
+#
+#
 W,H,RI
 bbc_CX,bbc_CY,btc_CX,btc_CY
 RI+1.5/2
