@@ -173,8 +173,8 @@ plt.show()
 # <codecell>
 
 plt.figsize(20,10)
-plt.gca().set_xlim(-2*100,W*100)
-
+plt.gca().set_xlim(-1,W+1)
+plt.gca().set_ylim(RI-1,H+RI+1)
 
 top = __builtin__.sum ([
    volume_integrate_arc_top(P(S[lsc_CX],S[lsc_CY]), S[lsc_R], 0., S[Symbol('p1_X')]),

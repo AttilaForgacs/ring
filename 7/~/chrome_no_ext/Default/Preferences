@@ -337,12 +337,28 @@
             "apis.google.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 55,
+                  "5": 75,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "clients1.google.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
                   "6": 0
                },
                "supports_spdy": true
             },
             "fonts.googleapis.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "googleads.g.doubleclick.net:443": {
                "settings": {
                   "4": 100,
                   "5": 32,
@@ -380,6 +396,12 @@
                   "5": 46,
                   "6": 0
                },
+               "supports_spdy": true
+            },
+            "twitter.com:443": {
+               "supports_spdy": true
+            },
+            "www.facebook.com:443": {
                "supports_spdy": true
             },
             "www.google.com:443": {

@@ -6,5 +6,21 @@
       "include_subdomains": true,
       "mode": "force-https",
       "static_spki_hashes": [  ]
+   },
+   "TZmujbl93Yt3JI8wZ4X/zjkA0WFNGNW44A+o7h4YyHw=": {
+      "created": 1374315630.018699,
+      "dynamic_spki_hashes_expiry": 0.0,
+      "expiry": 1374315630.018699,
+      "include_subdomains": false,
+      "mode": "default",
+      "static_spki_hashes": [  ]
+   },
+   "df0sSkr4gOg4VK8d/NNTAWFtAN/MjCgPCJ5ml+ucdZE=": {
+      "created": 1374315601.436469,
+      "dynamic_spki_hashes_expiry": 0.0,
+      "expiry": 1405851601.436464,
+      "include_subdomains": false,
+      "mode": "force-https",
+      "static_spki_hashes": [  ]
    }
 }
