@@ -7,6 +7,7 @@ from tools import _2_circles_tangential_equations
 from operator import itemgetter
 from matplotlib import pyplot
 
+
 class TR2(BaseModel):
     def __init__(self, params=None, context=None):
         super(TR2, self).__init__(params, context)
@@ -14,14 +15,6 @@ class TR2(BaseModel):
         self.params = params
         c = context
         p = params
-
-        c['lc_R'] = params.R41
-        c['lc_CX'] = params.R41
-        c['lc_CY'] = Symbol('lc_CY', positive=True)
-
-        c['tc_R'] = params.R61
-        c['tc_CX'] = params.W / 2.
-        c['tc_CY'] = params.RI + params.H - params.R61
 
         c['slope_length'] = params.R20
 
@@ -40,26 +33,39 @@ class TR2(BaseModel):
         c['p6_X'] = p.W
         c['p6_Y'] = p.RI + c['slope_base']
 
+        c['lc_R'] = params.R41
+        c['lc_CX'] = params.R41
+        c['lc_CY'] = c['p3_Y']
+
+        c['tc_R'] = Symbol('tc_R', positive=True)
+        c['tc_CX'] = params.W / 2.
+        c['tc_CY'] = Symbol('tc_CY')
+
+
     def create_equations(self):
         super(TR2, self).create_equations()
 
         c = self.context
         p = self.params
 
-        c.variables = [c['lc_CY']]
+        c.variables = [c['tc_CY'], c['tc_R']]
         c.equations = []
         c.equations += _2_circles_tangential_equations('lc', 'tc', 'p1',
                                                        c.variables, c)
+        c.equations += [
+            p.RI + p.H - c['tc_R'] - c['tc_CY']
+        ]
         solutions = sympy.solve(c.equations, *c.variables, dict=True)
         # get the solution where circle is above(y) the other
 
         self.sub_result = (
-            sorted(solutions, key=itemgetter(c['lc_CY']), reverse=True)[1]
+            sorted(solutions, key=itemgetter(c['tc_CY']), reverse=True)[1]
         )
 
-        c['lc_CY'] = self.sub_result[c['lc_CY']]
         c['p1_X'] = self.sub_result[c['p1_X']]
         c['p1_Y'] = self.sub_result[c['p1_Y']]
+        c['tc_CY'] = self.sub_result[c['tc_CY']]
+        c['tc_R'] = self.sub_result[c['tc_R']]
 
         c['p2_X'] = p.W - c['p1_X']
         c['p2_Y'] = c['p1_Y']
@@ -67,7 +73,6 @@ class TR2(BaseModel):
         c['rc_R'] = c['lc_R']
         c['rc_CX'] = p.W - c['rc_R']
         c['rc_CY'] = c['lc_CY']
-
 
 
     def solve(self):
@@ -83,7 +88,6 @@ class TR2(BaseModel):
         pyplot.gca().set_xlim(-1, p.W + 1)
         pyplot.gca().set_ylim(p.RI - 1, (p.RI + p.H + 1))
         pyplot.gca().set_aspect('equal')
-
 
         atop1 = volume_integrate_arc_top(
             P(c['lc_CX'], c['lc_CY']),
