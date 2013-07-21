@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TR1.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/Untitled0.ipynb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/circles_equations.ipynb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Certificate Revocation Lists" afterPath="" />
@@ -451,14 +452,14 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonLock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonSocket" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/TR7.py" afterPath="$PROJECT_DIR$/models/TR7.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/circles_equations_2.ipynb" afterPath="$PROJECT_DIR$/7/circles_equations_2.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/circles_equations_2.py" afterPath="$PROJECT_DIR$/7/circles_equations_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volumizer.py" afterPath="$PROJECT_DIR$/volumizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ring.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374319941835" ignored="false" />
+    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374400148085" ignored="false" />
     <file path="/volumizer.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374328756717" ignored="false" />
     <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374337192115" ignored="false" />
     <file path="/config.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374320660899" ignored="false" />
@@ -466,6 +467,7 @@
     <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321960493" ignored="false" />
     <file path="/TR7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374334510971" ignored="false" />
     <file path="/Python Console" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374330368299" ignored="false" />
+    <file path="/TR1.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374402168318" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -485,59 +487,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="volumizer.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="volumizer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volumizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="27" selection-start="1011" selection-end="1038" vertical-scroll-proportion="0.59370726">
+            <state line="26" column="44" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <file leaf-file-name="TR1.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/TR1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+            <state line="64" column="69" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TR7.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/TR7.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__main__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/ipdb/__main__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="4" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tools.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+            <state line="92" column="11" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.505571">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="umath.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3477" column="4" selection-start="92637" selection-end="92637" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1368941078629" expanded="true" signature="44229:44308" placeholder="..." />
-                <marker date="1368941078629" expanded="true" signature="86844:86923" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -562,9 +534,10 @@
       <list>
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/models/TR_7.py" />
+        <option value="$PROJECT_DIR$/models/TR7.py" />
         <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/volumizer.py" />
-        <option value="$PROJECT_DIR$/models/TR7.py" />
+        <option value="$PROJECT_DIR$/models/TR1.py" />
         <option value="$PROJECT_DIR$/tools.py" />
       </list>
     </option>
@@ -600,7 +573,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -635,6 +607,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -649,7 +622,12 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.tools">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.volumizer">
     <configuration default="false" name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -687,6 +665,25 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TR1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/TR1.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -749,14 +746,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.tools" />
       <item index="1" class="java.lang.String" itemvalue="Python.volumizer" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TR1" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.tools" />
-        <item index="1" class="java.lang.String" itemvalue="Python.volumizer" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.volumizer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TR1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tools" />
       </list>
     </recent_temporary>
   </component>
@@ -771,25 +770,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1677" y="0" width="1926" height="1177" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67050487" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39946857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -851,37 +850,34 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/models/TR1.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/volumizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3477" column="4" selection-start="92637" selection-end="92637" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1368941078629" expanded="true" signature="44229:44308" placeholder="..." />
-            <marker date="1368941078629" expanded="true" signature="86844:86923" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+        <state line="27" column="14" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/TR7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="15" column="31" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -900,9 +896,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3477" column="4" selection-start="92637" selection-end="92637" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1368941078629" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1368941078629" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3477" column="4" selection-start="92637" selection-end="92637" vertical-scroll-proportion="0.045143638">
+          <folding>
+            <marker date="1368941078629" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1368941078629" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/ipdb/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="4" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.045143638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="4" selection-start="6582" selection-end="6582" vertical-scroll-proportion="0.505571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2823" column="4" selection-start="90661" selection-end="90661" vertical-scroll-proportion="0.33286908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="436" selection-end="436" vertical-scroll-proportion="0.7291382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1039" column="8" selection-start="37466" selection-end="37466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="27" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/volumizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="27" selection-start="1011" selection-end="1038" vertical-scroll-proportion="0.59370726">
+        <state line="26" column="44" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="69" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="11" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.505571">
           <folding />
         </state>
       </provider>

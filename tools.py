@@ -11,9 +11,9 @@ from config import RING_PROFILES_DB_PATH
 import sympy
 from sympy import Symbol
 
-P = namedtuple('Point', ['x', 'y']);
+P = namedtuple('Point', ['x', 'y'])
 
-INTEGRATE_STEP = 0.001
+INTEGRATE_STEP = 0.0001
 EPS = 1e-5  #epsilon for error checking
 
 
@@ -89,13 +89,13 @@ def volume_integrate_arc_bottom(C, r, a, b):
 
 def volume_integrate_line(h, a, b):
     rng = arange(a, b, INTEGRATE_STEP)
-    #plot(rng, map(lambda z: f_line(z, h), rng))
+    plot(rng, map(lambda z: f_line(z, h), rng))
     return pi * ( quad(lambda z: (f_line(z, h) ** 2), a, b)[0] )
 
 
 def volume_integrate_slope(x1, y1, x2, y2, a, b):
     rng = arange(a, b, INTEGRATE_STEP)
-    #plot(rng, map(lambda z: f_slope(z, x1, y1, x2, y2), rng))
+    plot(rng, map(lambda z: f_slope(z, x1, y1, x2, y2), rng))
     return pi * ( quad(lambda z: (f_slope(z, x1, y1, x2, y2) ** 2), a, b)[0] )
 
 

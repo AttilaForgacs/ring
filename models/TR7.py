@@ -11,15 +11,20 @@ class TR7(BaseModel):
         self.context = context
         self.params = params
         c = context
-        c['bbc_R'] = params.R60
-        c['btc_R'] = params.R61
+
+        c['bbc_R'] = params.R61
+        c['btc_R'] = params.R60
+
         c['bbc_CX'] = params.W / 2.
         c['bbc_CY'] = params.RI + c['bbc_R']
+
         c['btc_CX'] = params.W / 2.
         c['btc_CY'] = params.RI + params.H - c['btc_R']
+
         c['lsc_R'] = Symbol('lsc_R', positive=True)
         c['lsc_CX'] = Symbol('lsc_CX')
         c['lsc_CY'] = Symbol('lsc_CY')
+
         c['rsc_R'] = Symbol('rsc_R', positive=True)
         c['rsc_CX'] = Symbol('rsc_CX')
         c['rsc_CY'] = Symbol('rsc_CY')

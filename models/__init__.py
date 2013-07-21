@@ -23,4 +23,5 @@ class BaseModel(object):
         pass
 
 
+from TR1 import *
 from TR7 import *
