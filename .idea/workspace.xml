@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TR1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TR2.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/Untitled0.ipynb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/circles_equations.ipynb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/Certificate Revocation Lists" afterPath="" />
@@ -451,7 +451,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonCookie" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonLock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/7/~/chrome_no_ext/SingletonSocket" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/TR7.py" afterPath="$PROJECT_DIR$/models/TR7.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Untitled0.ipynb" afterPath="$PROJECT_DIR$/Untitled0.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volumizer.py" afterPath="$PROJECT_DIR$/volumizer.py" />
@@ -466,8 +466,9 @@
     <file path="/TR_7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321819894" ignored="false" />
     <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321960493" ignored="false" />
     <file path="/TR7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374334510971" ignored="false" />
-    <file path="/Python Console" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374330368299" ignored="false" />
+    <file path="/Python Console" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374408515584" ignored="false" />
     <file path="/TR1.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374402168318" ignored="false" />
+    <file path="/TR2.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374409078837" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,25 +491,16 @@
       <file leaf-file-name="volumizer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volumizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="44" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+            <state line="53" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TR1.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/TR1.py">
+      <file leaf-file-name="TR2.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/TR2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="69" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="11" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.505571">
+            <state line="23" column="27" selection-start="659" selection-end="659" vertical-scroll-proportion="0.48563612">
               <folding />
             </state>
           </provider>
@@ -535,10 +527,11 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/models/TR_7.py" />
         <option value="$PROJECT_DIR$/models/TR7.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
-        <option value="$PROJECT_DIR$/volumizer.py" />
         <option value="$PROJECT_DIR$/models/TR1.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/models/TR2.py" />
+        <option value="$PROJECT_DIR$/volumizer.py" />
       </list>
     </option>
   </component>
@@ -770,7 +763,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1677" y="0" width="1926" height="1177" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,7 +773,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39946857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -857,7 +850,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -942,16 +935,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="436" selection-end="436" vertical-scroll-proportion="0.7291382">
+        <state line="1039" column="8" selection-start="37466" selection-end="37466" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/axes.py">
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1039" column="8" selection-start="37466" selection-end="37466" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.63885087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/solvers/solvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1304" column="0" selection-start="47073" selection-end="47073" vertical-scroll-proportion="-0.21866295">
+          <folding>
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+            <marker date="1369675086000" expanded="true" signature="-1:-1" placeholder="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="579" column="0" selection-start="17504" selection-end="17504" vertical-scroll-proportion="0.33286908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/operator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="612" column="8" selection-start="15719" selection-end="15719" vertical-scroll-proportion="0.33286908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="17" selection-start="3147" selection-end="3147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1411" selection-end="1637" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -965,21 +1003,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/volumizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="44" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+        <state line="53" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/TR1.py">
+    <entry file="file://$PROJECT_DIR$/models/TR2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="69" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="11" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.505571">
+        <state line="23" column="27" selection-start="659" selection-end="659" vertical-scroll-proportion="0.48563612">
           <folding />
         </state>
       </provider>

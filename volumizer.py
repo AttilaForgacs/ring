@@ -24,7 +24,7 @@ from models import *
 # RI=inner ring radius
 
 profiles_definiton = load_profiles_lookup_table({})
-ring_config = RingParams(W=6., H=1.8, CF=56., PROFILE='PR_007')
+ring_config = RingParams(W=6., H=1.8, CF=56., PROFILE='PR_014')
 ring_config.lookup_definition(profiles_definiton)
 
 print 'Using configuration:'

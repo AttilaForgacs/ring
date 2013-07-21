@@ -123,8 +123,8 @@ def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     Y = Symbol(var_name + '_Y')
 
     variables_list.extend([X, Y])
-    context[X] = X
-    context[Y] = Y
+    context[str(X)] = X
+    context[str(Y)] = Y
 
     eq_c1 = (X - c1_CX) ** 2 + (Y - c1_CY) ** 2 - c1_R ** 2
     eq_c2 = (X - c2_CX) ** 2 + (Y - c2_CY) ** 2 - c2_R ** 2
