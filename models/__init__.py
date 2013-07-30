@@ -26,6 +26,9 @@ class BaseModel(object):
 from TR1 import *
 from TR2 import *
 from TR3 import *
-from TR7 import *
+
+#from TR7 import *
+from TR7_validation import *
+
 from TR13 import *
 from TR20 import *

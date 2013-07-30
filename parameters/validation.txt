@@ -1,0 +1,8 @@
+Volume:
+Profile P2:     width: 4     height:2        ringwidth/inner circumfence 56     volume:0,396 cm³
+Profile P3:     width: 5     height:1,5     ringwidth/inner circumfence 56     volume:0,336 cm³
+Profile P4:     width: 7     height:3        ringwidth/inner circumfence 56     volume:1,155 cm³
+Profile P5:     width: 3     height:1        ringwidth/inner circumfence 56     volume:0,144 cm³
+Profile P6:     width: 6     height:2,5     ringwidth/inner circumfence 56     volume:0,758 cm³
+
+

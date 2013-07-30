@@ -106,7 +106,8 @@ def vol_sphere(r):
 
 def mkSymbol(name):
     #return Symbol(name, real=True, positive=True)
-    return Symbol(name, nonnegative=True)
+    #return Symbol(name, nonnegative=True)
+    return Symbol(name)
 
 
 def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
@@ -164,6 +165,7 @@ class RingParams(object):
         #calculated
 
         self.RI = CF / (2. * sympy.pi)
+        #self.RI = CF / (2. * 3.1415)
         #self.RI = round(self.RI, DIGITS)
 
         #looked up
