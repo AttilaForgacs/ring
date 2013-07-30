@@ -1,5 +1,6 @@
 #coding: utf-8
 import csv
+from docutils.parsers.rst.directives import nonnegative_int
 from pylab import arccos, plot, arange
 from collections import namedtuple
 from scipy.integrate import quad
@@ -7,7 +8,7 @@ from math import *
 from collections import *
 #degrees = 180 * radians / pi
 #radians = pi * degrees / 180
-from config import RING_PROFILES_DB_PATH
+from config import RING_PROFILES_DB_PATH, DIGITS
 import sympy
 from sympy import Symbol
 
@@ -103,6 +104,11 @@ def vol_sphere(r):
     return (4. / 3.) * pi * (r ** 3)
 
 
+def mkSymbol(name):
+    #return Symbol(name, real=True, positive=True)
+    return Symbol(name, nonnegative=True)
+
+
 def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     '''
     c1: string name of circle 1
@@ -119,8 +125,8 @@ def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     c2_CY = G['{}_CY'.format(c2)]
     c2_R = G['{}_R'.format(c2)]
 
-    X = Symbol(var_name + '_X')
-    Y = Symbol(var_name + '_Y')
+    X = mkSymbol(var_name + '_X')
+    Y = mkSymbol(var_name + '_Y')
 
     variables_list.extend([X, Y])
     context[str(X)] = X
@@ -156,8 +162,10 @@ class RingParams(object):
         self.CF = CF
         self.PROFILE = PROFILE
         #calculated
-        self.RI = CF / (2. * pi)
-        self.RI = round(self.RI, 6)
+
+        self.RI = CF / (2. * sympy.pi)
+        #self.RI = round(self.RI, DIGITS)
+
         #looked up
         self.MODEL = None
         self.R60 = None

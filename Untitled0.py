@@ -1,5 +1,10 @@
-#coding: utf-8
+# -*- coding: utf-8 -*-
+# <nbformat>3.0</nbformat>
+
+# <codecell>
+
 from __future__ import division
+from pylab import *
 from tools import *
 from collections import *
 from math import *
@@ -13,6 +18,8 @@ from sympy import *
 import numpy as np
 import scipy as sp
 import time
+import models
+reload(models)
 from models import *
 
 
@@ -24,7 +31,7 @@ from models import *
 # RI=inner ring radius
 
 profiles_definiton = load_profiles_lookup_table({})
-ring_config = RingParams(W=6., H=1.8, CF=56., PROFILE='PR_007')
+ring_config = RingParams(W=6., H=1.8, CF=56., PROFILE='PR_022')
 ring_config.lookup_definition(profiles_definiton)
 
 print 'Using configuration:'
@@ -46,8 +53,12 @@ print
 
 solutions = model.solve()
 
-print solutions
+print model.get_volume()
 
-volume = model.get_volume()
+# <codecell>
 
-print 'Volume:', volume
+89.12+18
+
+# <codecell>
+
+
