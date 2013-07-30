@@ -87,4 +87,13 @@ len(model.s_2_all),model.s_2_all,model.s_2_fil
 
 # <codecell>
 
+model.context
+
+# <codecell>
+
+model.get_volume()
+
+# <codecell>
+
+print model.get_volume()
 
