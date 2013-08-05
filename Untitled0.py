@@ -122,6 +122,22 @@ for f in arange(0., 5., step):
 
 # <codecell>
 
+a=np.array(slices);
+
+# <codecell>
+
+scatter(a[:,2],a[:,0])
+
+
+# <codecell>
+
+import pandas as pd
+df=pd.DataFrame(a)
+df.columns = ['FROM','TO','VOLUME']
+df.to_excel(r'/ring/ring/volume_slices.xls')
+
+# <codecell>
+
 
 __builtin__._fr = 4.9
 __builtin__._to = 5
