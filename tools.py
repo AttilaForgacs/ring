@@ -1,4 +1,5 @@
 #coding: utf-8
+import __builtin__
 import csv
 from docutils.parsers.rst.directives import nonnegative_int
 from pylab import arccos, plot, arange
@@ -76,25 +77,48 @@ def integrate_slope(x1, y1, x2, y2, a, b):
     return quad(lambda z: f_slope(z, x1, y1, x2, y2), a, b)[0]
 
 
+def apply_slice_limits(a, b):
+    """
+    >>> _fr = 1.
+    >>> _to = 1.3
+    >>> assert apply_slice_limits(1.1,1.2) == (1.1,1.2)
+    """
+
+    if '_fr' in __builtin__.__dict__ and '_to' in __builtin__.__dict__:
+        _fr = float(__builtin__._fr)
+        _to = float(__builtin__._to)
+        if _fr > a:
+            a = min(b, _fr)
+        if _to < b:
+            b = max(a, _to)
+        return a, b
+    else:
+        return a, b
+
+
 def volume_integrate_arc_top(C, r, a, b):
+    a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
     plot(rng, map(lambda z: f_top_arc(z, C, r), rng))
     return pi * ( quad(lambda z: (f_top_arc(z, C, r) ** 2), a, b)[0] )
 
 
 def volume_integrate_arc_bottom(C, r, a, b):
+    a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
     plot(rng, map(lambda z: f_bottom_arc(z, C, r), rng))
     return pi * ( quad(lambda z: (f_bottom_arc(z, C, r) ** 2), a, b)[0] )
 
 
 def volume_integrate_line(h, a, b):
+    a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
     plot(rng, map(lambda z: f_line(z, h), rng))
     return pi * ( quad(lambda z: (f_line(z, h) ** 2), a, b)[0] )
 
 
 def volume_integrate_slope(x1, y1, x2, y2, a, b):
+    a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
     plot(rng, map(lambda z: f_slope(z, x1, y1, x2, y2), rng))
     return pi * ( quad(lambda z: (f_slope(z, x1, y1, x2, y2) ** 2), a, b)[0] )

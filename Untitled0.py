@@ -3,8 +3,8 @@
 
 # <codecell>
 
-%load_ext autoreload
-%autoreload 2
+#%load_ext autoreload
+#%autoreload 2
 from __future__ import division
 from pylab import *
 from tools import *
@@ -23,7 +23,7 @@ import time
 import models
 from sympy import init_printing;init_printing()
 
-reload(models)
+#reload(models)
 from models import *
 
 #print model.get_volume()
@@ -45,6 +45,22 @@ from models import *
 # R=radius
 # W=width H=height
 # RI=inner ring radius
+
+'''
+But one profile we need for the testdata is.
+ 
+P3 with 6mm width and 2,4mm height.
+Ringsize only 56
+ 
+For this profile we need the data for every 0,1mm slice.
+Volume:
+Profile P2:     width: 4     height:2        ringwidth/inner circumfence 56     volume:0,396 cm³
+Profile P3:     width: 5     height:1,5     ringwidth/inner circumfence 56     volume:0,336 cm³
+Profile P4:     width: 7     height:3        ringwidth/inner circumfence 56     volume:1,155 cm³
+Profile P5:     width: 3     height:1        ringwidth/inner circumfence 56     volume:0,144 cm³
+Profile P6:     width: 6     height:2,5     ringwidth/inner circumfence 56     volume:0,758 cm³
+'''
+
 
 profiles_definiton = load_profiles_lookup_table({})
 ring_config = RingParams(W=5., H=1.5, CF=56., PROFILE='PR_003')
@@ -91,9 +107,29 @@ model.context
 
 # <codecell>
 
+import pandas
+
+# <codecell>
+
+step=0.1
+slices=[]
+for f in arange(0., 5., step):
+    __builtin__._fr = f
+    __builtin__._to = f + step
+    v = model.get_volume()
+    slices.append([f,f+step,v])
+    
+
+# <codecell>
+
+
+__builtin__._fr = 4.9
+__builtin__._to = 5
+
+# <codecell>
+
 model.get_volume()
 
 # <codecell>
 
-print model.get_volume()
 
