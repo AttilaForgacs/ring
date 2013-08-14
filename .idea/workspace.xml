@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="" />
+    <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TR4.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/parameters/.~lock.p3.xlsx#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters/p2.xlsx" afterPath="$PROJECT_DIR$/parameters/p2.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters/p3.xlsx" afterPath="$PROJECT_DIR$/parameters/p3.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters/p4.xlsx" afterPath="$PROJECT_DIR$/parameters/p4.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volume_slices.xls" afterPath="$PROJECT_DIR$/volume_slices.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <list id="fd54a7d1-ab7b-46ba-9eff-7c98209e9645" name="New changelist" comment="" />
     <ignored path="ring.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375722328257" ignored="false" />
+    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1376057170775" ignored="false" />
     <file path="/volumizer.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374328756717" ignored="false" />
     <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375726490794" ignored="false" />
     <file path="/config.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374320660899" ignored="false" />
     <file path="/TR_7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321819894" ignored="false" />
-    <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375200412428" ignored="false" />
+    <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375730818850" ignored="false" />
     <file path="/TR7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375201537380" ignored="false" />
     <file path="/Python Console" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374412132883" ignored="false" />
     <file path="/TR1.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374402168318" ignored="false" />
@@ -37,26 +46,7 @@
     <favorites_list name="ring" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TR7_validation.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/TR7_validation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="33" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="33" selection-end="33" vertical-scroll-proportion="0.03311966">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -81,11 +71,12 @@
         <option value="$PROJECT_DIR$/models/TR13.py" />
         <option value="$PROJECT_DIR$/models/TR20.py" />
         <option value="$PROJECT_DIR$/volumizer.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/models/TR7.py" />
         <option value="$PROJECT_DIR$/models/TR7_validation.py" />
         <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/models/TR4.py" />
       </list>
     </option>
   </component>
@@ -120,7 +111,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,15 +145,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -371,14 +362,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1686" height="1052" extended-state="7" />
-    <editor active="true" />
+    <frame x="-3" y="0" width="1686" height="1052" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39909092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -471,25 +462,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/TR7_validation.py">
+    <entry file="file://$PROJECT_DIR$/models/TR4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="28" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR7_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="28" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="22" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="109" column="22" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volumizer.py">
@@ -504,9 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/ipdb/__main__.py">
@@ -516,9 +506,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="38" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
@@ -558,9 +546,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="579" column="0" selection-start="17504" selection-end="17504" vertical-scroll-proportion="0.33286908">
-          <folding />
-        </state>
+        <state line="579" column="0" selection-start="17504" selection-end="17504" vertical-scroll-proportion="0.33286908" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/operator.py">
@@ -593,11 +579,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_lookup.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="347" selection-end="354" vertical-scroll-proportion="0.09555984" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="347" selection-end="354" vertical-scroll-proportion="0.09555984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/TR13.py">
@@ -626,37 +612,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/7/__obsolete____circles_equations.ipynb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="29" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-7.84" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="103" column="29" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-7.84" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/TR2_connected.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="9" selection-start="1633" selection-end="1737" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/TR7_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="33" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="62" column="9" selection-start="1633" selection-end="1737" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="33" selection-end="33" vertical-scroll-proportion="0.03311966">
+        <state line="1" column="18" selection-start="33" selection-end="33" vertical-scroll-proportion="0.03311966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR7_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="8" selection-start="0" selection-end="3505" vertical-scroll-proportion="0.23498419" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="8" selection-start="510" selection-end="510" vertical-scroll-proportion="0.687039" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TR4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="25" selection-start="3685" selection-end="3685" vertical-scroll-proportion="0.048245613">
           <folding />
         </state>
       </provider>

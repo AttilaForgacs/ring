@@ -32,3 +32,5 @@ from TR7_validation import *
 
 from TR13 import *
 from TR20 import *
+
+from TR4 import *
