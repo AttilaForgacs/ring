@@ -58,7 +58,12 @@ def f_top_arc(x, C, r):
     return y
 
 
-f_bottom_arc = lambda x, C, r: (C.y - ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) ))
+def f_bottom_arc(x, C, r):
+    try:
+        y = C.y - ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
+    except:
+        y = 0.
+    return y
 
 
 def integrate_arc_top(C, r, a, b):
@@ -130,6 +135,7 @@ def vol_sphere(r):
 
 def mkSymbol(name):
     return Symbol(name, real=True, positive=True)
+
 
 def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     '''

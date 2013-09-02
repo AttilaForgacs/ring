@@ -37,7 +37,6 @@ class TR13(BaseModel):
     def create_equations(self):
         super(TR13, self).create_equations()
 
-
         c = self.context
         p = self.params
 
@@ -100,21 +99,21 @@ class TR13(BaseModel):
         top = sum([atop1, atop2, atop3])
 
         abottom1 = volume_integrate_arc_bottom(
-            P(c['lc_CX'], c['lc_CY']),
-            c['lc_R'],
-            0., c['p3_X']
+            P(p.R40, p.RI + p.R40),
+            p.R40,
+            0., p.R40
         )
 
         aline = volume_integrate_line(
             h=p.RI,
-            a=c['p3_X'],
-            b=c['p4_X']
+            a=p.R40,
+            b=p.W - p.R40,
         )
 
         abottom2 = volume_integrate_arc_bottom(
-            P(c['rc_CX'], c['rc_CY']),
-            c['rc_R'],
-            c['p4_X'], p.W
+            P(p.W - p.R40, p.RI + p.R40),
+            p.R40,
+            p.W - p.R40, p.W-0.000000001 # XXX DIRTY HACK SAMU
         )
 
         bottom = sum([abottom1, aline, abottom2])
