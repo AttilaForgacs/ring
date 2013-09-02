@@ -129,10 +129,7 @@ def vol_sphere(r):
 
 
 def mkSymbol(name):
-    #return Symbol(name, real=True, positive=True)
-    #return Symbol(name, nonnegative=True)
-    return Symbol(name)
-
+    return Symbol(name, real=True, positive=True)
 
 def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     '''
