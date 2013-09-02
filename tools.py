@@ -12,6 +12,7 @@ from collections import *
 from config import RING_PROFILES_DB_PATH, DIGITS
 import sympy
 from sympy import Symbol
+import numpy as np
 
 P = namedtuple('Point', ['x', 'y'])
 
@@ -51,19 +52,19 @@ def f_top_arc(x, C, r):
         @param C circle mid point
         @param r radius
     """
-    try:
-        y = C.y + ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
-    except:
-        y = 0.
-    return y
+    y = C.y + ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
+    if complex(y).imag > 0.:
+        return 0.
+    else:
+        return float(y)
 
 
 def f_bottom_arc(x, C, r):
-    try:
-        y = C.y - ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
-    except:
-        y = 0.
-    return y
+    y = C.y - ( sympy.sqrt(r ** 2 - (x - C.x) ** 2) )
+    if complex(y).imag > 0.:
+        return 0.
+    else:
+        return y
 
 
 def integrate_arc_top(C, r, a, b):
@@ -111,21 +112,36 @@ def volume_integrate_arc_top(C, r, a, b):
 def volume_integrate_arc_bottom(C, r, a, b):
     a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
-    plot(rng, map(lambda z: f_bottom_arc(z, C, r), rng))
+    plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
+    plot(plot_range, map(lambda z: f_bottom_arc(z, C, r),
+                         plot_range
+    ))
     return pi * ( quad(lambda z: (f_bottom_arc(z, C, r) ** 2), a, b)[0] )
 
 
 def volume_integrate_line(h, a, b):
     a, b = apply_slice_limits(a, b)
+
     rng = arange(a, b, INTEGRATE_STEP)
-    plot(rng, map(lambda z: f_line(z, h), rng))
+    plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
+
+    plot(
+        plot_range,
+        map(lambda z: f_line(z, h),
+            plot_range
+        )
+    )
     return pi * ( quad(lambda z: (f_line(z, h) ** 2), a, b)[0] )
 
 
 def volume_integrate_slope(x1, y1, x2, y2, a, b):
     a, b = apply_slice_limits(a, b)
     rng = arange(a, b, INTEGRATE_STEP)
-    plot(rng, map(lambda z: f_slope(z, x1, y1, x2, y2), rng))
+    plot(
+        rng,
+        map(lambda z: f_slope(z, x1, y1, x2, y2),
+            rng
+        ))
     return pi * ( quad(lambda z: (f_slope(z, x1, y1, x2, y2) ** 2), a, b)[0] )
 
 

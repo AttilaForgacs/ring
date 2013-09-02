@@ -113,7 +113,7 @@ class TR13(BaseModel):
         abottom2 = volume_integrate_arc_bottom(
             P(p.W - p.R40, p.RI + p.R40),
             p.R40,
-            p.W - p.R40, p.W-0.000000001 # XXX DIRTY HACK SAMU
+            p.W - p.R40, p.W-0.1
         )
 
         bottom = sum([abottom1, aline, abottom2])
