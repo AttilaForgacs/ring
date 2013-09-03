@@ -1,18 +1,7 @@
-# -*- coding: utf-8 -*-
-# <nbformat>3.0</nbformat>
 
-# <codecell>
-
-%pylab inline
-
-# <codecell>
-
-%load_ext autoreload
-%autoreload 1
-
-# <codecell>
 
 from __future__ import division
+import __builtin__
 from pylab import *
 from tools import *
 from collections import *
@@ -27,8 +16,6 @@ from sympy import *
 import numpy as np
 import scipy as sp
 import time
-%aimport models
-%aimport tools
 from sympy import init_printing;init_printing()
 from models import *
 
@@ -85,11 +72,8 @@ def a():
 
 # <codecell>
 
-%pdb
-
 # <codecell>
 
-%%time
 slices=[]
 prec=2
 i = 2
@@ -135,7 +119,7 @@ plot([x[3] for x in slices])
 
 # <codecell>
 
-[ round(float(x[3]),5) for x in slices ]
+[ abs(round(float(x[3]),2)) for x in slices ]
 
 # <codecell>
 

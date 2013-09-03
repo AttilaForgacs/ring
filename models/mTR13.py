@@ -5,6 +5,7 @@ import sympy
 from tools import *
 from tools import _2_circles_tangential_equations
 from operator import itemgetter
+import numpy as np
 from matplotlib import pyplot
 
 
@@ -78,19 +79,19 @@ class TR13(BaseModel):
                 pyplot.gca().set_aspect('equal')
         '''
 
-        atop1 = volume_integrate_arc_top(
+        atop1, th1 = volume_integrate_arc_top(
             P(c['lc_CX'], c['lc_CY']),
             c['lc_R'],
             0., c['p1_X']
         )
 
-        atop2 = volume_integrate_arc_top(
+        atop2, th2 = volume_integrate_arc_top(
             P(c['tc_CX'], c['tc_CY']),
             c['tc_R'],
             c['p1_X'], c['p2_X']
         )
 
-        atop3 = volume_integrate_arc_top(
+        atop3, th3 = volume_integrate_arc_top(
             P(c['rc_CX'], c['rc_CY']),
             c['rc_R'],
             c['p2_X'], p.W
@@ -98,25 +99,31 @@ class TR13(BaseModel):
 
         top = sum([atop1, atop2, atop3])
 
-        abottom1 = volume_integrate_arc_bottom(
+        abottom1, bh1 = volume_integrate_arc_bottom(
             P(p.R40, p.RI + p.R40),
             p.R40,
             0., p.R40
         )
 
-        aline = volume_integrate_line(
+        aline, bh2 = volume_integrate_line(
             h=p.RI,
             a=p.R40,
             b=p.W - p.R40,
         )
 
-        abottom2 = volume_integrate_arc_bottom(
+        abottom2, bh3 = volume_integrate_arc_bottom(
             P(p.W - p.R40, p.RI + p.R40),
             p.R40,
-            p.W - p.R40, p.W-0.1
+            p.W - p.R40, p.W
         )
 
         bottom = sum([abottom1, aline, abottom2])
 
         volume = top - bottom
-        return float(volume / 1000.)
+        min_height = min_drop_nones(th1, th2, th3) - max_drop_nones(bh1, bh2,
+                                                                    bh3)
+
+        return (
+            float(volume / 1000.),
+            min_height
+        )
