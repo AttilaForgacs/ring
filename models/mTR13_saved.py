@@ -3,7 +3,7 @@ from models import BaseModel
 from sympy import Symbol, solve
 import sympy
 from tools import *
-from tools import _2_circles_tangential_equations,_2_circles_tangential_equations_constrained
+from tools import _2_circles_tangential_equations
 from operator import itemgetter
 import numpy as np
 from matplotlib import pyplot
@@ -29,12 +29,11 @@ class TR13(BaseModel):
 
         c['lc_R'] = p.R41
         c['lc_CX'] = p.R41
-        c['lc_CY'] = p.RI + p.R40
+        c['lc_CY'] = mkSymbol('lc_CY')  #p.RI + p.R41
 
         c['rc_R'] = p.R41
         c['rc_CX'] = p.W - p.R41
         c['rc_CY'] = None # later
-
 
     def create_equations(self):
         super(TR13, self).create_equations()
@@ -42,30 +41,27 @@ class TR13(BaseModel):
         c = self.context
         p = self.params
 
-        c.variables = []
+        c.variables = [c['lc_CY']]
 
         c.equations = []
-        c.equations += _2_circles_tangential_equations_constrained(
-            'lc', 'tc', 'p1',
-            c.variables, c
-        )
+        c.equations += _2_circles_tangential_equations('lc', 'tc', 'p1',
+                                                       c.variables, c)
 
         solutions = sympy.solve(c.equations, *c.variables, dict=True)
 
         # get the solution where circle is above(y) the other
         print 'solutions:', len(solutions)
-        print solutions
 
         self.sub_result = (
-            sorted(solutions, key=itemgetter(c['p1_X']), reverse=True)[1]
+            sorted(solutions, key=itemgetter(c['lc_CY']), reverse=True)[1]
         )
 
         c['p2_Y'] = self.sub_result[c['p1_Y']]
         c['p2_X'] = p.W - self.sub_result[c['p1_X']]
         c['p1_X'] = self.sub_result[c['p1_X']]
         c['p1_Y'] = self.sub_result[c['p1_Y']]
-        c['rc_CY'] = c['lc_CY']
-        # c['lc_CY'] = self.sub_result[c['lc_CY']]
+        c['rc_CY'] = self.sub_result[c['lc_CY']]
+        c['lc_CY'] = self.sub_result[c['lc_CY']]
 
     def solve(self):
         pass

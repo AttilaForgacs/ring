@@ -34,6 +34,14 @@ from models import *
 
 # <codecell>
 
+%aimport models
+
+# <codecell>
+
+models.TR13.__module__
+
+# <codecell>
+
 profiles_definiton = load_profiles_lookup_table({})
 ring_config = RingParams(W=5., H=1.5, CF=56., PROFILE='PR_001')
 ring_config.lookup_definition(profiles_definiton)
@@ -58,9 +66,15 @@ r41s=s.col(7)
 
 # <codecell>
 
+try:
+    del __builtin__._fr 
+    del __builtin__._to 
+except:
+    pass
+
 def a():
-    prec=2
-    for i in xrange(62, len(widths)):
+    prec=3
+    for i in xrange(91, len(widths)):
         w=widths[i].value
         h=heights[i].value
         r60=r60s[i].value
@@ -85,13 +99,17 @@ def a():
 
 # <codecell>
 
+a()
+
+# <codecell>
+
 %pdb
 
 # <codecell>
 
 %%time
 slices=[]
-prec=2
+prec=3
 i = 2
 w=widths[i].value
 h=heights[i].value
@@ -114,8 +132,14 @@ if r40 and r41 and r61:
     context = Context()
     model = globals()[ring_config.MODEL](params=ring_config, context=context)
     model.create_equations()        
-    #print 'Vol:',model.get_volume()
-    print time.time()
+    try:
+        del __builtin__._fr 
+        del __builtin__._to 
+    except:
+        pass
+
+    print 'Vol:',model.get_volume()
+    
     print '...>'
     step=0.1    
     for f in arange(0., 5., step):
@@ -124,7 +148,7 @@ if r40 and r41 and r61:
         v,h = model.get_volume()
         slices.append([f,f+step,v,h])
         print [f,f+step,v,h]
-        print time.time()
+    
         
         
 print slices
@@ -139,5 +163,5 @@ plot([x[3] for x in slices])
 
 # <codecell>
 
-plot([ abs(round(float(x[2]),10)) for x in slices ],'r--')
+23plot([ abs(round(float(x[2]),10)) for x in slices ],'r--')
 

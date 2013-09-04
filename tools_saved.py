@@ -132,6 +132,7 @@ def volume_integrate_arc_bottom(C, r, a, b):
                          plot_range
     ))
 
+
     if a == b:
         height = None
     else:
@@ -252,36 +253,6 @@ def _2_circles_tangential_equations(c1, c2, var_name, variables_list, context):
     return [eq_c1, eq_c2, eq_line]
 
 
-def _2_circles_tangential_equations_constrained(c1, c2, var_name,
-                                                variables_list, context):
-    '''
-    c1: string name of circle 1
-    c2: string name of other circle
-    var_name: string, independent will be created
-    '''
-    G = context
-
-    c1_CX = G['{}_CX'.format(c1)]
-    c1_CY = G['{}_CY'.format(c1)]
-    c1_R = G['{}_R'.format(c1)]
-
-    c2_CX = G['{}_CX'.format(c2)]
-    c2_CY = G['{}_CY'.format(c2)]
-    c2_R = G['{}_R'.format(c2)]
-
-    X = mkSymbol(var_name + '_X')
-    Y = mkSymbol(var_name + '_Y')
-
-    variables_list.extend([X, Y])
-    context[str(X)] = X
-    context[str(Y)] = Y
-
-    eq_c1 = (X - c1_CX) ** 2 + (Y - c1_CY) ** 2 - c1_R ** 2
-    eq_line = (Y - c2_CY) * (c1_CX - c2_CX) - (X - c2_CX) * (c1_CY - c2_CY)
-
-    return [eq_c1, eq_line]
-
-
 class RingParams(object):
     def __str__(self):
         return 'PR={} MDL={} RI={} W={} H={} R60={} R61={} R20={} R40={} R41={}'.format(
@@ -365,7 +336,6 @@ def min_drop_nones(*args):
         return min(l)
     else:
         return 0
-
 
 def max_drop_nones(*args):
     l = [value for value in args if value is not None]
