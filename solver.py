@@ -135,6 +135,20 @@ def calc_line_vs_circle_intersections(c1, x1, y1, x2, y2, context):
     return zip(res[0], res[1])
 
 
+def circle_subst(c1, x, context):
+    G = context
+    X = x
+    c_CX = float(G['{}_CX'.format(c1)])
+    c_CY = float(G['{}_CY'.format(c1)])
+    c_R = float(G['{}_R'.format(c1)])
+
+    ys = [
+        (c_CY + (X - c_CX + c_R) ** (1 / 2) * (c_CX - X + c_R) ** (1 / 2)),
+        (c_CY - (X - c_CX + c_R) ** (1 / 2) * (c_CX - X + c_R) ** (1 / 2))
+    ]
+
+    return ys
+
 # if __name__ == '__main__':
 #     c = dict()
 #     c['lc_R'] = 1
@@ -152,10 +166,19 @@ def calc_line_vs_circle_intersections(c1, x1, y1, x2, y2, context):
 #     print zip(res[0], res[1], res[2])
 
 
-if __name__ == '__main__':
-    c = dict()
-    c['lc_R'] = 10
-    c['lc_CX'] = 0
-    c['lc_CY'] = 0
+# if __name__ == '__main__':
+#     c = dict()
+#     c['lc_R'] = 10
+#     c['lc_CX'] = 0
+#     c['lc_CY'] = 0
+#
+#     print calc_line_vs_circle_intersections('lc', -5, -5, 10, 10, c)
 
-    print calc_line_vs_circle_intersections('lc', -5, -5, 10, 10, c)
+
+# if __name__ == '__main__':
+#     c = dict()
+#     c['lc_R'] = 10
+#     c['lc_CX'] = 0
+#     c['lc_CY'] = 0
+#     print circle_subst('lc', -10, c)
+

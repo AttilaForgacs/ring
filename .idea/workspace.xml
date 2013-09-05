@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/mTR20.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/mTR2_connected.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/mTR7_validation.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/mTR13_saved.py" afterPath="$PROJECT_DIR$/models/mTR1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mTR213.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mTR5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR13.py" afterPath="$PROJECT_DIR$/models/mTR13.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR2.py" afterPath="$PROJECT_DIR$/models/mTR2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR3.py" afterPath="$PROJECT_DIR$/models/mTR3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR4.py" afterPath="$PROJECT_DIR$/models/mTR4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR7.py" afterPath="$PROJECT_DIR$/models/mTR7.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solver.py" afterPath="$PROJECT_DIR$/solver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fd54a7d1-ab7b-46ba-9eff-7c98209e9645" name="New changelist" comment="" />
@@ -23,7 +17,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378316700938" ignored="false" />
     <file path="/volumizer.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374328756717" ignored="false" />
-    <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378232005427" ignored="false" />
+    <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378409565573" ignored="false" />
     <file path="/config.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374320660899" ignored="false" />
     <file path="/TR_7.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374321819894" ignored="false" />
     <file path="/__init__.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378399075103" ignored="false" />
@@ -34,7 +28,7 @@
     <file path="/TR3.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374411833545" ignored="false" />
     <file path="/TR13.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378142184161" ignored="false" />
     <file path="/TR20.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374417450531" ignored="false" />
-    <file path="/a.dummy" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375203676806" ignored="false" />
+    <file path="/a.dummy" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378409026299" ignored="false" />
     <file path="/mTR13.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378313025503" ignored="false" />
     <file path="/fragment.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378146418600" ignored="false" />
     <file path="/solver.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378406885522" ignored="false" />
@@ -44,6 +38,8 @@
     <file path="$PROJECT_DIR$/.ipynb_checkpoints/sandbox_TR3-checkpoint.ipynb" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378400873583" ignored="false" />
     <file path="/mTR3.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378401716643" ignored="false" />
     <file path="/mTR4.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378402725628" ignored="false" />
+    <file path="/mTR213.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378407689821" ignored="false" />
+    <file path="/mTR5.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378409213284" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,53 @@
     <favorites_list name="ring" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="solver.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="148" column="0" selection-start="14961" selection-end="14961" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="315" column="36" selection-start="7389" selection-end="7389" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mTR5.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/mTR5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="27" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.63461536">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mTR1.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/mTR1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="30" selection-start="683" selection-end="705" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -93,15 +135,17 @@
         <option value="$PROJECT_DIR$/volumizer.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py" />
         <option value="$PROJECT_DIR$/main_volume.py" />
-        <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/models/mTR13.py" />
         <option value="$PROJECT_DIR$/models/mTR1.py" />
         <option value="$PROJECT_DIR$/models/mTR2.py" />
         <option value="$PROJECT_DIR$/models/mTR3.py" />
         <option value="$PROJECT_DIR$/models/mTR4.py" />
         <option value="$PROJECT_DIR$/models/mTR7.py" />
+        <option value="$PROJECT_DIR$/models/mTR213.py" />
         <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/solver.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/models/mTR5.py" />
       </list>
     </option>
   </component>
@@ -417,7 +461,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1686" height="1052" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -428,7 +472,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -646,20 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="4" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="679" selection-end="705" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="24" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0">
@@ -681,23 +711,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="23" selection-start="2726" selection-end="2726" vertical-scroll-proportion="0.8230519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR213.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="19" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="20" selection-start="539" selection-end="539" vertical-scroll-proportion="0.7218124">
+        <state line="27" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="30" selection-start="683" selection-end="705" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="315" column="36" selection-start="7389" selection-end="7389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="14907" selection-end="14907" vertical-scroll-proportion="1.375">
+        <state line="148" column="0" selection-start="14961" selection-end="14961" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR7.py">
+    <entry file="file://$PROJECT_DIR$/models/mTR5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="23" selection-start="2726" selection-end="2726" vertical-scroll-proportion="0.8230519">
+        <state line="101" column="27" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.63461536">
           <folding />
         </state>
       </provider>

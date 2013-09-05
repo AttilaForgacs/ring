@@ -1,4 +1,5 @@
 #coding: utf-8
+import math
 import __builtin__
 import csv
 from docutils.parsers.rst.directives import nonnegative_int
@@ -312,9 +313,7 @@ class RingParams(object):
         self.PROFILE = PROFILE
         #calculated
 
-        self.RI = CF / (2. * sympy.pi)
-        #self.RI = CF / (2. * 3.1415)
-        #self.RI = round(self.RI, DIGITS)
+        self.RI = CF / (2. * math.pi)
 
         #looked up
         self.MODEL = None
