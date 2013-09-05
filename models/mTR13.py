@@ -1,7 +1,3 @@
-'''
-- Nx profile
-- Runner [+CF]
-'''
 import __builtin__
 from models import BaseModel
 from tools import *

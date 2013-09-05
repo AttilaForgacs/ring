@@ -1,33 +1,45 @@
 import __builtin__
 from models import BaseModel
-from sympy import Symbol, solve
-import sympy
 from tools import *
-from tools import _2_circles_tangential_equations
+from tools import _2_circles_tangential_equations, _2_circles_tangential_equations_constrained
+from operator import itemgetter
+import numpy as np
+import solver
+
 
 class TR7(BaseModel):
     def __init__(self, params=None, context=None):
         super(TR7, self).__init__(params, context)
+
         self.context = context
         self.params = params
         c = context
+        p = params
 
-        c['bbc_R'] = params.R61
-        c['btc_R'] = params.R60
+        c['tc_R'] = p.R61
+        c['tc_CX'] = p.W / 2.
+        c['tc_CY'] = p.RI + p.H - p.R61
 
-        c['bbc_CX'] = params.W / 2.
-        c['bbc_CY'] = params.RI + c['bbc_R']
+        c['bc_R'] = p.R60
+        c['bc_CX'] = p.W / 2.
+        c['bc_CY'] = p.RI + p.R60
 
-        c['btc_CX'] = params.W / 2.
-        c['btc_CY'] = params.RI + params.H - c['btc_R']
+        c['ltc_R'] = p.R41
+        c['ltc_CX'] = p.R41
+        c['ltc_CY'] = None
 
-        c['lsc_R'] = Symbol('lsc_R', positive=True)
-        c['lsc_CX'] = Symbol('lsc_CX')
-        c['lsc_CY'] = Symbol('lsc_CY')
+        c['rtc_R'] = p.R41
+        c['rtc_CX'] = p.W - p.R41
+        c['rtc_CY'] = None
 
-        c['rsc_R'] = Symbol('rsc_R', positive=True)
-        c['rsc_CX'] = Symbol('rsc_CX')
-        c['rsc_CY'] = Symbol('rsc_CY')
+        c['lbc_R'] = p.R40
+        c['lbc_CX'] = p.R40
+        c['lbc_CY'] = None
+
+        c['rbc_R'] = p.R40
+        c['rbc_CX'] = p.W - p.R40
+        c['rbc_CY'] = None
+
 
     def calculate_intersections(self):
         super(TR7, self).calculate_intersections()
@@ -35,75 +47,94 @@ class TR7(BaseModel):
         c = self.context
         p = self.params
 
-        c.variables = [
-            c['lsc_CX'],
-            c['lsc_CY'],
-            c['lsc_R'],
-            c['rsc_CX'],
-            c['rsc_CY'],
-            c['rsc_R'],
-        ]
+        c.variables = []
+        c.equations = []
 
-        c.equations += [c['lsc_CX'] - c['lsc_R']]
-        c.equations += [c['rsc_CX'] - p.W + c['rsc_R']]
+        solutions = solver.calc_intersection('tc', 'ltc', c)
+        self.sub_result = (
+            sorted(solutions, key=itemgetter(2), reverse=True)[1]
+        )
 
-        c.equations += _2_circles_tangential_equations('lsc', 'btc', 'p1',
-                                                       c.variables, c)
-        c.equations += _2_circles_tangential_equations('lsc', 'bbc', 'p3',
-                                                       c.variables, c)
-        c.equations += _2_circles_tangential_equations('rsc', 'btc', 'p2',
-                                                       c.variables, c)
-        c.equations += _2_circles_tangential_equations('rsc', 'bbc', 'p4',
-                                                       c.variables, c)
+        x = float(self.sub_result[0])
+        y = float(self.sub_result[1])
+        cy = float(self.sub_result[2])
 
-    def solve(self):
-        super(TR7, self).start()
-        c = self.context
-        p = self.params
-        solutions = sympy.solve(c.equations, *c.variables, dict=True)
-        super(TR7, self).stop()
-        filtered_solutions = [s for s in solutions
-                              if
-                              p.RI + p.H > s[c['lsc_CY']] > p.RI and
-                              p.RI + p.H > s[c['rsc_CY']] > p.RI
-        ]
-        self.solutions = filtered_solutions
-        return filtered_solutions
+        c['p1_X'] = x
+        c['p1_Y'] = y
+
+        c['p2_Y'] = y
+        c['p2_X'] = p.W - x
+
+        c['ltc_CY'] = cy
+        c['rtc_CY'] = cy
+
+        solutions = solver.calc_intersection('bc', 'lbc', c)
+        self.sub_result = (
+            sorted(solutions, key=itemgetter(2), reverse=True)[-2]
+        )
+
+        x = float(self.sub_result[0])
+        y = float(self.sub_result[1])
+        cy = float(self.sub_result[2])
+
+        c['p3_X'] = x
+        c['p3_Y'] = y
+
+        c['p4_Y'] = y
+        c['p4_X'] = p.W - x
+
+        c['lbc_CY'] = cy
+        c['rbc_CY'] = cy
 
     def get_volume(self):
-
-        S = self.solutions[0]
-        vars = self.context.variables
         c = self.context
         p = self.params
 
-        top = __builtin__.sum([
-            volume_integrate_arc_top(P(S[c['lsc_CX']], S[c['lsc_CY']]),
-                                     S[c['lsc_R']],
-                                     0.,S[Symbol('p1_X')]
-            ),
+        atop1, th1 = volume_integrate_arc_top(
+            P(c['ltc_CX'], c['ltc_CY']),
+            c['ltc_R'],
+            0., c['p1_X']
+        )
 
-            volume_integrate_arc_top(P(c['btc_CX'], c['btc_CY']), c['btc_R'],
-                                     S[Symbol('p1_X')], S[Symbol('p2_X')]),
+        atop2, th2 = volume_integrate_arc_top(
+            P(c['tc_CX'], c['tc_CY']),
+            c['tc_R'],
+            c['p1_X'], c['p2_X']
+        )
 
-            volume_integrate_arc_top(P(S[c['rsc_CX']], S[c['rsc_CY']]),
-                                     S[c['rsc_R']],
-                                     S[Symbol('p2_X')], p.W),
-        ])
+        atop3, th3 = volume_integrate_arc_top(
+            P(c['rtc_CX'], c['rtc_CY']),
+            c['rtc_R'],
+            c['p2_X'], p.W
+        )
 
-        bottom = __builtin__.sum([
-            volume_integrate_arc_bottom(P(S[c['lsc_CX']],
-                                          S[c['lsc_CY']]), S[c['lsc_R']],
-                                        0.,
-                                        S[Symbol('p3_X')]),
-            volume_integrate_arc_bottom(P(c['bbc_CX'], c['bbc_CY']),
-                                        c['bbc_R'],
-                                        S[Symbol('p3_X')], S[Symbol('p4_X')]),
-            volume_integrate_arc_bottom(
-                P(S[c['rsc_CX']], S[c['rsc_CY']]),
-                S[c['rsc_R']],
-                S[Symbol('p4_X')], p.W),
-        ])
+        top = sum([atop1, atop2, atop3])
+
+        abottom1, bh1 = volume_integrate_arc_bottom(
+            P(c['lbc_CX'], c['lbc_CY']),
+            c['lbc_R'],
+            0., c['p3_X']
+        )
+
+        aline, bh2 = volume_integrate_arc_bottom(
+            P(c['bc_CX'], c['bc_CY']),
+            c['bc_R'],
+            c['p3_X'], c['p4_X']
+        )
+
+        abottom2, bh3 = volume_integrate_arc_bottom(
+            P(c['rbc_CX'], c['rbc_CY']),
+            c['rbc_R'],
+            c['p4_X'], p.W
+        )
+
+        bottom = sum([abottom1, aline, abottom2])
 
         volume = top - bottom
-        return float(volume / 1000.)
+        min_height = min_drop_nones(th1, th2, th3) - max_drop_nones(bh1, bh2,
+                                                                    bh3)
+
+        return (
+            float(volume / 1000.),
+            min_height
+        )

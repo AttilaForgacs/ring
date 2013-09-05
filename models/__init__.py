@@ -23,16 +23,10 @@ class BaseModel(object):
         pass
 
 
-from mTR1 import *
-from mTR2 import *
-from mTR3 import *
+from mTR1 import TR1
+from mTR2 import TR2
+from mTR3 import TR3
+from mTR4 import TR4
+from mTR7 import TR7
 
-#from TR7 import *
-from mTR7_validation import *
-
-from mTR13 import *
-#from mTR13_saved import *
-
-from mTR20 import *
-
-from mTR4 import *
+from mTR13 import TR13

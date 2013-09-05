@@ -1,45 +1,32 @@
 import __builtin__
 from models import BaseModel
-from sympy import Symbol, solve
-import sympy
 from tools import *
-from tools import _2_circles_tangential_equations
+from tools import _2_circles_tangential_equations, _2_circles_tangential_equations_constrained
 from operator import itemgetter
-from matplotlib import pyplot
+import numpy as np
+import solver
 
 
 class TR2(BaseModel):
     def __init__(self, params=None, context=None):
         super(TR2, self).__init__(params, context)
+
         self.context = context
         self.params = params
         c = context
         p = params
 
-        c['slope_length'] = params.R20
+        c['tc_R'] = p.R61
+        c['tc_CX'] = p.W / 2.
+        c['tc_CY'] = p.RI + p.H - p.R61
 
-        # bottom begins here
-        c['slope_base'] = sqrt((c['slope_length'] ** 2) / 2.)
+        c['lc_R'] = p.R41
+        c['lc_CX'] = p.R41
+        c['lc_CY'] = None
 
-        c['p3_X'] = 0.
-        c['p3_Y'] = p.RI + c['slope_base']
-
-        c['p4_X'] = c['slope_base']
-        c['p4_Y'] = p.RI
-
-        c['p5_X'] = p.W - c['slope_base']
-        c['p5_Y'] = p.RI
-
-        c['p6_X'] = p.W
-        c['p6_Y'] = p.RI + c['slope_base']
-
-        c['lc_R'] = params.R41
-        c['lc_CX'] = params.R41
-        c['lc_CY'] = c['p3_Y']
-
-        c['tc_R'] = Symbol('tc_R', positive=True)
-        c['tc_CX'] = params.W / 2.
-        c['tc_CY'] = Symbol('tc_CY')
+        c['rc_R'] = p.R41
+        c['rc_CX'] = p.W - p.R41
+        c['rc_CY'] = None # later
 
 
     def calculate_intersections(self):
@@ -48,60 +35,47 @@ class TR2(BaseModel):
         c = self.context
         p = self.params
 
-        c.variables = [c['tc_CY'], c['tc_R']]
+        c.variables = []
         c.equations = []
-        c.equations += _2_circles_tangential_equations('lc', 'tc', 'p1',
-                                                       c.variables, c)
-        c.equations += [
-            p.RI + p.H - c['tc_R'] - c['tc_CY']
-        ]
-        solutions = sympy.solve(c.equations, *c.variables, dict=True)
-        # get the solution where circle is above(y) the other
+
+        solutions = solver.calc_intersection('tc', 'lc', c)
 
         self.sub_result = (
-            sorted(solutions, key=itemgetter(c['tc_CY']), reverse=True)[1]
+            sorted(solutions, key=itemgetter(2), reverse=True)[1]
         )
 
-        c['p1_X'] = self.sub_result[c['p1_X']]
-        c['p1_Y'] = self.sub_result[c['p1_Y']]
-        c['tc_CY'] = self.sub_result[c['tc_CY']]
-        c['tc_R'] = self.sub_result[c['tc_R']]
+        x = float(self.sub_result[0])
+        y = float(self.sub_result[1])
+        cy = float(self.sub_result[2])
 
-        c['p2_X'] = p.W - c['p1_X']
-        c['p2_Y'] = c['p1_Y']
+        c['p1_X'] = x
+        c['p1_Y'] = y
 
-        c['rc_R'] = c['lc_R']
-        c['rc_CX'] = p.W - c['rc_R']
-        c['rc_CY'] = c['lc_CY']
+        c['p2_Y'] = y
+        c['p2_X'] = p.W - x
 
-
-    def solve(self):
-        pass
+        c['lc_CY'] = cy
+        c['rc_CY'] = cy
 
     def get_volume(self):
-        vars = self.context.variables
         c = self.context
         p = self.params
 
-        ratio = ((p.W) / (p.H))
-        pyplot.figure(1, figsize=(20, 20. * ratio))
-        pyplot.gca().set_xlim(-1, p.W + 1)
-        pyplot.gca().set_ylim(p.RI - 1, (p.RI + p.H + 1))
-        pyplot.gca().set_aspect('equal')
+        a = p.R20 / (2 ** 0.5)
 
-        atop1 = volume_integrate_arc_top(
+        atop1, th1 = volume_integrate_arc_top(
             P(c['lc_CX'], c['lc_CY']),
             c['lc_R'],
             0., c['p1_X']
         )
 
-        atop2 = volume_integrate_arc_top(
+        atop2, th2 = volume_integrate_arc_top(
             P(c['tc_CX'], c['tc_CY']),
             c['tc_R'],
             c['p1_X'], c['p2_X']
         )
 
-        atop3 = volume_integrate_arc_top(
+        atop3, th3 = volume_integrate_arc_top(
             P(c['rc_CX'], c['rc_CY']),
             c['rc_R'],
             c['p2_X'], p.W
@@ -109,23 +83,31 @@ class TR2(BaseModel):
 
         top = sum([atop1, atop2, atop3])
 
-        bslope1 = volume_integrate_slope(
-            c['p3_X'], c['p3_Y'],
-            c['p4_X'], c['p4_Y'],
-            0., c['p4_X']
+        abottom1, bh1 = volume_integrate_slope_bottom(
+            0., p.RI + a,
+            a, p.RI,
+            0., a
         )
 
-        bline1 = volume_integrate_line(p.RI, c['p4_X'], c['p5_X'])
-
-        bslope2 = volume_integrate_slope(
-            c['p5_X'], c['p5_Y'],
-            c['p6_X'], c['p6_Y'],
-            c['p5_X'], c['p6_X']
+        aline, bh2 = volume_integrate_line(
+            h=p.RI,
+            a=a,
+            b=p.W - a
         )
 
-        bottom = sum([bslope1, bline1, bslope2])
+        abottom2, bh3 = volume_integrate_slope_bottom(
+            p.W - a, p.RI,
+            p.W, p.RI + a,
+            p.W - a, p.W
+        )
+
+        bottom = sum([abottom1, aline, abottom2])
 
         volume = top - bottom
-        return float(volume / 1000.)
+        min_height = min_drop_nones(th1, th2, th3) - max_drop_nones(bh1, bh2,
+                                                                    bh3)
 
-
+        return (
+            float(volume / 1000.),
+            min_height
+        )
