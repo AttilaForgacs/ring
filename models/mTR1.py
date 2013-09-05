@@ -44,7 +44,7 @@ class TR1(BaseModel):
         c['p6_X'] = params.W
         c['p6_Y'] = params.RI + c['slope_base']
 
-    def create_equations(self):
+    def calculate_intersections(self):
         pass
 
     def solve(self):

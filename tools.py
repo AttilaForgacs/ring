@@ -18,6 +18,7 @@ P = namedtuple('Point', ['x', 'y'])
 
 INTEGRATE_STEP = 0.0001
 EPS = 1e-5  #epsilon for error checking
+DO_PLOT = False
 
 
 def test_eq(a, b):
@@ -107,9 +108,10 @@ def apply_slice_limits(a, b):
 def volume_integrate_arc_top(C, r, a, b):
     a, b = apply_slice_limits(a, b)
 
-    rng = arange(a, b, INTEGRATE_STEP)
-    rng = rng[:-1]
-    plot(rng, map(lambda z: f_top_arc(z, C, r), rng))
+    if DO_PLOT:
+        rng = arange(a, b, INTEGRATE_STEP)
+        rng = rng[:-1]
+        plot(rng, map(lambda z: f_top_arc(z, C, r), rng))
 
     if a == b:
         height = None
@@ -124,13 +126,13 @@ def volume_integrate_arc_top(C, r, a, b):
 
 def volume_integrate_arc_bottom(C, r, a, b):
     a, b = apply_slice_limits(a, b)
-    rng = arange(a, b, INTEGRATE_STEP)
-    plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
-    plot_range = plot_range[:-1]
 
-    plot(plot_range, map(lambda z: f_bottom_arc(z, C, r),
-                         plot_range
-    ))
+    if DO_PLOT:
+        plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
+        plot_range = plot_range[:-1]
+        plot(plot_range, map(lambda z: f_bottom_arc(z, C, r),
+                             plot_range
+        ))
 
     if a == b:
         height = None
@@ -146,16 +148,15 @@ def volume_integrate_arc_bottom(C, r, a, b):
 def volume_integrate_line(h, a, b):
     a, b = apply_slice_limits(a, b)
 
-    rng = arange(a, b, INTEGRATE_STEP)
-    plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
-    plot_range = plot_range[:-1]
-
-    plot(
-        plot_range,
-        map(lambda z: f_line(z, h),
-            plot_range
+    if DO_PLOT:
+        plot_range = np.linspace(a, b, (b - a) / INTEGRATE_STEP)
+        plot_range = plot_range[:-1]
+        plot(
+            plot_range,
+            map(lambda z: f_line(z, h),
+                plot_range
+            )
         )
-    )
 
     if a == b:
         height = None
@@ -170,13 +171,15 @@ def volume_integrate_line(h, a, b):
 
 def volume_integrate_slope_top(x1, y1, x2, y2, a, b):
     a, b = apply_slice_limits(a, b)
-    rng = arange(a, b, INTEGRATE_STEP)
-    rng = rng[:-1]
-    plot(
-        rng,
-        map(lambda z: f_slope(z, x1, y1, x2, y2),
-            rng
-        ))
+
+    if DO_PLOT:
+        rng = arange(a, b, INTEGRATE_STEP)
+        rng = rng[:-1]
+        plot(
+            rng,
+            map(lambda z: f_slope(z, x1, y1, x2, y2),
+                rng
+            ))
 
     if a == b:
         height = None
@@ -194,13 +197,16 @@ def volume_integrate_slope_top(x1, y1, x2, y2, a, b):
 
 def volume_integrate_slope_bottom(x1, y1, x2, y2, a, b):
     a, b = apply_slice_limits(a, b)
-    rng = arange(a, b, INTEGRATE_STEP)
-    rng = rng[:-1]
-    plot(
-        rng,
-        map(lambda z: f_slope(z, x1, y1, x2, y2),
-            rng
-        ))
+
+    if DO_PLOT:
+        rng = arange(a, b, INTEGRATE_STEP)
+        rng = rng[:-1]
+        plot(
+            rng,
+            map(lambda z: f_slope(z, x1, y1, x2, y2),
+                rng
+            ))
+
     if a == b:
         height = None
     else:

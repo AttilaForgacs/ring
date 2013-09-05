@@ -1,17 +1,20 @@
+'''
+- Nx profile
+- Runner [+CF]
+'''
 import __builtin__
 from models import BaseModel
-from sympy import Symbol, solve
-import sympy
 from tools import *
-from tools import _2_circles_tangential_equations,_2_circles_tangential_equations_constrained
+from tools import _2_circles_tangential_equations, _2_circles_tangential_equations_constrained
 from operator import itemgetter
 import numpy as np
-from matplotlib import pyplot
+import solver
 
 
 class TR13(BaseModel):
     def __init__(self, params=None, context=None):
         super(TR13, self).__init__(params, context)
+
         self.context = context
         self.params = params
         c = context
@@ -36,52 +39,36 @@ class TR13(BaseModel):
         c['rc_CY'] = None # later
 
 
-    def create_equations(self):
-        super(TR13, self).create_equations()
+    def calculate_intersections(self):
+        super(TR13, self).calculate_intersections()
 
         c = self.context
         p = self.params
 
         c.variables = []
-
         c.equations = []
-        c.equations += _2_circles_tangential_equations_constrained(
-            'lc', 'tc', 'p1',
-            c.variables, c
-        )
 
-        solutions = sympy.solve(c.equations, *c.variables, dict=True)
-
-        # get the solution where circle is above(y) the other
-        print 'solutions:', len(solutions)
-        print solutions
+        solutions = solver.calc_intersection('tc', 'lc', c)
 
         self.sub_result = (
-            sorted(solutions, key=itemgetter(c['p1_X']), reverse=True)[1]
+            sorted(solutions, key=itemgetter(2), reverse=True)[1]
         )
 
-        c['p2_Y'] = self.sub_result[c['p1_Y']]
-        c['p2_X'] = p.W - self.sub_result[c['p1_X']]
-        c['p1_X'] = self.sub_result[c['p1_X']]
-        c['p1_Y'] = self.sub_result[c['p1_Y']]
-        c['rc_CY'] = c['lc_CY']
-        # c['lc_CY'] = self.sub_result[c['lc_CY']]
+        x = float(self.sub_result[0])
+        y = float(self.sub_result[1])
+        cy = float(self.sub_result[2])
 
-    def solve(self):
-        pass
+        c['p2_Y'] = y
+        c['p2_X'] = p.W - x
+        c['p1_X'] = x
+        c['p1_Y'] = y
+        c['lc_CY'] = cy
+        c['rc_CY'] = cy
 
     def get_volume(self):
-        vars = self.context.variables
+
         c = self.context
         p = self.params
-
-        '''
-                ratio = ((p.W) / (p.H))
-                pyplot.figure(1, figsize=(20, 20. * ratio))
-                pyplot.gca().set_xlim(-1, p.W + 1)
-                pyplot.gca().set_ylim(p.RI - 1, (p.RI + p.H + 1))
-                pyplot.gca().set_aspect('equal')
-        '''
 
         atop1, th1 = volume_integrate_arc_top(
             P(c['lc_CX'], c['lc_CY']),

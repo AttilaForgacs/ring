@@ -78,7 +78,7 @@ print ring_config
 
 context = Context()
 model = globals()[ring_config.MODEL](params=ring_config, context=context)
-model.create_equations()
+model.calculate_intersections()
 model, context
 
 # <codecell>

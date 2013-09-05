@@ -35,8 +35,8 @@ class TR13(BaseModel):
         c['rc_CX'] = p.W - p.R41
         c['rc_CY'] = None # later
 
-    def create_equations(self):
-        super(TR13, self).create_equations()
+    def calculate_intersections(self):
+        super(TR13, self).calculate_intersections()
 
         c = self.context
         p = self.params

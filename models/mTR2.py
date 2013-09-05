@@ -42,8 +42,8 @@ class TR2(BaseModel):
         c['tc_CY'] = Symbol('tc_CY')
 
 
-    def create_equations(self):
-        super(TR2, self).create_equations()
+    def calculate_intersections(self):
+        super(TR2, self).calculate_intersections()
 
         c = self.context
         p = self.params

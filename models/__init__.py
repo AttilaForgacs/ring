@@ -5,7 +5,7 @@ class BaseModel(object):
     def __init__(self, params=None, context=None):
         super(BaseModel, self).__init__()
 
-    def create_equations(self):
+    def calculate_intersections(self):
         pass
 
     def solve(self):

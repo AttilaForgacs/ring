@@ -67,7 +67,7 @@ def a():
             print ring_config
             context = Context()
             model = globals()[ring_config.MODEL](params=ring_config, context=context)
-            model.create_equations()        
+            model.calculate_intersections()
             print 'Vol:',model.get_volume()
 
 # <codecell>
@@ -97,7 +97,7 @@ if r40 and r41 and r61:
     print ring_config
     context = Context()
     model = globals()[ring_config.MODEL](params=ring_config, context=context)
-    model.create_equations()        
+    model.calculate_intersections()
     #print 'Vol:',model.get_volume()
     print time.time()
     print '...>'

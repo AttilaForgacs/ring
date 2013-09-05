@@ -31,8 +31,8 @@ class TR3(BaseModel):
         c['p4_Y'] = p.RI + p.H
 
 
-    def create_equations(self):
-        super(TR3, self).create_equations()
+    def calculate_intersections(self):
+        super(TR3, self).calculate_intersections()
 
         c = self.context
         p = self.params

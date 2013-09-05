@@ -33,8 +33,8 @@ class TR20(BaseModel):
         c['tc_CY'] = mkSymbol('tc_CY')
 
 
-    def create_equations(self):
-        super(TR20, self).create_equations()
+    def calculate_intersections(self):
+        super(TR20, self).calculate_intersections()
 
         c = self.context
         p = self.params

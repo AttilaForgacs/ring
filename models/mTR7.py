@@ -29,8 +29,8 @@ class TR7(BaseModel):
         c['rsc_CX'] = Symbol('rsc_CX')
         c['rsc_CY'] = Symbol('rsc_CY')
 
-    def create_equations(self):
-        super(TR7, self).create_equations()
+    def calculate_intersections(self):
+        super(TR7, self).calculate_intersections()
 
         c = self.context
         p = self.params

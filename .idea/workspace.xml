@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/models/mTR13.py" line="19" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/models/mTR13.py" line="22" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mTR13_saved.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools_saved.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_volumizer.py" afterPath="$PROJECT_DIR$/get_volumizer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_volumizer.ipynb" afterPath="$PROJECT_DIR$/get_volumizer.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR13.py" afterPath="$PROJECT_DIR$/models/mTR13.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/get_volumizer-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/get_volumizer-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solver.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/parameters/.~lock.PR_001_Daten.xlsx#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TR4.py" afterPath="$PROJECT_DIR$/TR4.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/get_volumizer-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/get_volumizer-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_volumizer.ipynb" afterPath="$PROJECT_DIR$/get_volumizer.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_volumizer.py" afterPath="$PROJECT_DIR$/get_volumizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR1.py" afterPath="$PROJECT_DIR$/models/mTR1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR13.py" afterPath="$PROJECT_DIR$/models/mTR13.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR13_saved.py" afterPath="$PROJECT_DIR$/models/mTR13_saved.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR2.py" afterPath="$PROJECT_DIR$/models/mTR2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR20.py" afterPath="$PROJECT_DIR$/models/mTR20.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR2_connected.py" afterPath="$PROJECT_DIR$/models/mTR2_connected.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR3.py" afterPath="$PROJECT_DIR$/models/mTR3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR4.py" afterPath="$PROJECT_DIR$/models/mTR4.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR7.py" afterPath="$PROJECT_DIR$/models/mTR7.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR7_validation.py" afterPath="$PROJECT_DIR$/models/mTR7_validation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_volume.py" afterPath="$PROJECT_DIR$/main_volume.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_volume.py" afterPath="$PROJECT_DIR$/test_volume.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fd54a7d1-ab7b-46ba-9eff-7c98209e9645" name="New changelist" comment="" />
     <ignored path="ring.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378144645837" ignored="false" />
+    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378316700938" ignored="false" />
     <file path="/volumizer.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374328756717" ignored="false" />
     <file path="/tools.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378232005427" ignored="false" />
     <file path="/config.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374320660899" ignored="false" />
@@ -32,8 +44,10 @@
     <file path="/TR13.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378142184161" ignored="false" />
     <file path="/TR20.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1374417450531" ignored="false" />
     <file path="/a.dummy" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1375203676806" ignored="false" />
-    <file path="/mTR13.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378234707927" ignored="false" />
+    <file path="/mTR13.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378313025503" ignored="false" />
     <file path="/fragment.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378146418600" ignored="false" />
+    <file path="/solver.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378312114969" ignored="false" />
+    <file path="/main_volume.py" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1378313351227" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,37 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mTR13.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mTR13.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/mTR13.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="72" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="1" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_volume.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_volume.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="53" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="277" column="0" selection-start="6431" selection-end="6431" vertical-scroll-proportion="0.0">
+            <state line="2" column="14" selection-start="31" selection-end="31" vertical-scroll-proportion="0.06954689">
               <folding />
             </state>
           </provider>
@@ -118,11 +105,12 @@
         <option value="$PROJECT_DIR$/models/TR4.py" />
         <option value="$PROJECT_DIR$/models/TR13.py" />
         <option value="$PROJECT_DIR$/volumizer.py" />
-        <option value="$PROJECT_DIR$/main_volume.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/solver.py" />
+        <option value="$PROJECT_DIR$/main_volume.py" />
         <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/models/mTR13.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
       </list>
     </option>
   </component>
@@ -197,10 +185,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.idesettings.debugger.python" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -220,25 +208,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main_volume">
-    <configuration default="false" name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ring" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="volumizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,6 +293,25 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="solver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solver.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,19 +372,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.tools" />
-      <item index="1" class="java.lang.String" itemvalue="Python.volumizer" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mTR1" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest apply_slice_limits" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main_volume" />
+      <item index="0" class="java.lang.String" itemvalue="Python.volumizer" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mTR1" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest apply_slice_limits" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main_volume" />
+      <item index="4" class="java.lang.String" itemvalue="Python.solver" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.main_volume" />
-        <item index="1" class="java.lang.String" itemvalue="Python.volumizer" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest apply_slice_limits" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mTR1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tools" />
+        <item index="1" class="java.lang.String" itemvalue="Python.solver" />
+        <item index="2" class="java.lang.String" itemvalue="Python.volumizer" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest apply_slice_limits" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mTR1" />
       </list>
     </recent_temporary>
   </component>
@@ -438,13 +426,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1686" height="1052" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -453,7 +442,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -543,15 +531,10 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/numpy/core/umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3477" column="4" selection-start="92637" selection-end="92637" vertical-scroll-proportion="0.045143638" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/math.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="351" column="4" selection-start="6582" selection-end="6582" vertical-scroll-proportion="0.505571" />
@@ -567,22 +550,17 @@
         <state line="579" column="0" selection-start="17504" selection-end="17504" vertical-scroll-proportion="0.33286908" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/operator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="612" column="8" selection-start="15719" selection-end="15719" vertical-scroll-proportion="0.33286908" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/core/symbol.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="295" column="48" selection-start="8671" selection-end="8680" vertical-scroll-proportion="-6.3648067" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_lookup.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="347" selection-end="354" vertical-scroll-proportion="0.09555984" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="347" selection-end="354" vertical-scroll-proportion="0.09555984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
@@ -591,11 +569,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/7/__obsolete____circles_equations.ipynb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="29" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-7.84" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="29" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-7.84" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR7_validation.py">
@@ -679,11 +657,6 @@
         <state line="5" column="4" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2823" column="4" selection-start="90661" selection-end="90661" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/solvers/polysys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
@@ -698,7 +671,9 @@
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/scipy/integrate/quadpack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="4" selection-start="6488" selection-end="6488" vertical-scroll-proportion="0.0" />
+        <state line="133" column="4" selection-start="6488" selection-end="6488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR13_saved.py">
@@ -708,33 +683,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tools_saved.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-0.98717946" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="0" selection-start="6431" selection-end="6431" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-0.98717946">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_volume.py">
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/operator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="53" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="601" column="12" selection-start="15294" selection-end="15294" vertical-scroll-proportion="0.6785714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR13.py">
+    <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="72" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0">
+        <state line="67" column="20" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="1" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="7" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2823" column="4" selection-start="90661" selection-end="90661" vertical-scroll-proportion="1.6025641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.4520548">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_volume.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.5827187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR13.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="31" selection-end="31" vertical-scroll-proportion="0.06954689">
           <folding />
         </state>
       </provider>

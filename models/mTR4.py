@@ -40,8 +40,8 @@ class TR4(BaseModel):
         c['rbc_CY'] = mkSymbol('rbc_CY')
 
 
-    def create_equations(self):
-        super(TR4, self).create_equations()
+    def calculate_intersections(self):
+        super(TR4, self).calculate_intersections()
 
         c = self.context
         p = self.params
