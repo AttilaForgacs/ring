@@ -1,8 +1,12 @@
 import tools
 import models
 import xlrd
+import collections
 import pprint
-
+import itertools
+import numpy as np
+import csv
+import __builtin__
 
 def pr_to_tr(pr):
     '''
@@ -15,13 +19,19 @@ def pr_to_tr(pr):
 def process_pr(pr):
     excelfile = './parameters/%s_Daten.xlsx' % pr
     assert open(excelfile)
+    csvfile = open('/home/attila/ringdong/%s.csv' % pr, 'wb+')
+
+    ringwriter = csv.writer(csvfile, delimiter=',',
+                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
+
     tr_code = pr_to_tr(pr)
     assert len(tr_code) > 2
     model_ref = models.__dict__[tr_code]
     book = xlrd.open_workbook(excelfile)
     sheet = book.sheet_by_index(0)
 
-    parameters = {}
+    parameters = collections.OrderedDict()
+
     for i in range(2, sheet.ncols):
         col = sheet.col(i)
         id = str(col[0].value)
@@ -31,13 +41,22 @@ def process_pr(pr):
             parameters[id].append(row.value)
 
     parameter = None
+    w, h = 0, 0
+
+    #TODO header
+    # ringwriter.writerow(
+    #     list(parameters.keys()) + list(
+    #         itertools.chain(*zip(_volumes, _heights))))
 
     for CF in xrange(460, 760, 5):
-        for i in range(0, sheet.nrows):
+        for i in range(0, sheet.nrows - 1):
+
+            w = parameters['R51'][i]
+            h = parameters['R52'][i]
 
             parameter = tools.RingParams(
-                W=parameters['R51'][i],
-                H=parameters['R52'][i],
+                W=w,
+                H=h,
                 CF=CF / 10.,
                 PROFILE=pr,
             )
@@ -56,7 +75,29 @@ def process_pr(pr):
 
             model = model_ref(params=parameter, context=tools.Context())
             model.calculate_intersections()
-            print 'Vol:', model.get_volume()
+
+            #print 'Vol:', model.get_volume()
+
+            step = 0.1
+            _volumes = []
+            _heights = []
+
+            for f in np.arange(0., w, step):
+                __builtin__._fr = f
+                __builtin__._to = f + step
+                vol, hei = model.get_volume()
+                _volumes.append(float(vol))
+                _heights.append(float(hei))
+
+            _heights[-1] = 0 # trim the sunci
+
+            ringwriter.writerow(
+                list(map(lambda k: parameters[k][i], parameters.keys())) +
+                list(itertools.chain(*zip(_volumes, _heights)))
+            )
+            csvfile.flush()
+
+    csvfile.close()
 
 
 if __name__ == '__main__':
