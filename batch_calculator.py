@@ -1,3 +1,5 @@
+import resource
+import sys
 import tools
 import models
 import xlrd
@@ -7,12 +9,17 @@ import itertools
 import numpy as np
 import csv
 import __builtin__
+from itertools import chain
+import argparse
+import time
+ctx = tools.load_profiles_lookup_table({})
+
 
 def pr_to_tr(pr):
     '''
     returns like: TR4
     '''
-    ctx = tools.load_profiles_lookup_table({})
+    global ctx
     return ctx[pr]['TR_CODE']
 
 
@@ -42,11 +49,16 @@ def process_pr(pr):
 
     parameter = None
     w, h = 0, 0
+    max_width = max(parameters['R51'])
 
-    #TODO header
-    # ringwriter.writerow(
-    #     list(parameters.keys()) + list(
-    #         itertools.chain(*zip(_volumes, _heights))))
+    ringwriter.writerow(
+        ['CF'] +
+        list(parameters.keys()) +
+        list(chain.from_iterable(
+            map(lambda x: ['v%s' % (x), 'h%s' % (x)],
+                range(0, int(max_width * 10)))
+        ))
+    )
 
     for CF in xrange(460, 760, 5):
         for i in range(0, sheet.nrows - 1):
@@ -73,10 +85,12 @@ def process_pr(pr):
                 # not enough data, skip
                 continue
 
+
             model = model_ref(params=parameter, context=tools.Context())
             model.calculate_intersections()
 
-            #print 'Vol:', model.get_volume()
+            print resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.
+
 
             step = 0.1
             _volumes = []
@@ -89,17 +103,29 @@ def process_pr(pr):
                 _volumes.append(float(vol))
                 _heights.append(float(hei))
 
+            '''
             _heights[-1] = 0 # trim the sunci
 
             ringwriter.writerow(
+                [CF / 10.] +
                 list(map(lambda k: parameters[k][i], parameters.keys())) +
                 list(itertools.chain(*zip(_volumes, _heights)))
             )
             csvfile.flush()
+            '''
 
     csvfile.close()
 
-
 if __name__ == '__main__':
-    process_pr('PR_006')
+    parser = argparse.ArgumentParser(
+        description='Ring Slicer 0.2b'
+    )
+
+    parser.add_argument(action="store", dest="profile_name", type=str,
+                        help="e.g. PR_006"
+    )
+
+    arguments = parser.parse_args()
+
+    process_pr(arguments.profile_name)
 

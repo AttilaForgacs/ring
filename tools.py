@@ -20,7 +20,7 @@ P = namedtuple('Point', ['x', 'y'])
 INTEGRATE_STEP = 0.0001
 EPS = 1e-5  #epsilon for error checking
 DO_PLOT = False
-
+print "Plotting:",DO_PLOT
 
 def test_eq(a, b):
     assert abs(a - b) <= EPS
