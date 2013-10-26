@@ -11,8 +11,6 @@ from collections import *
 #degrees = 180 * radians / pi
 #radians = pi * degrees / 180
 from config import RING_PROFILES_DB_PATH, DIGITS
-import sympy
-from sympy import Symbol
 import numpy as np
 
 P = namedtuple('Point', ['x', 'y'])
@@ -20,14 +18,15 @@ P = namedtuple('Point', ['x', 'y'])
 INTEGRATE_STEP = 0.0001
 EPS = 1e-5  #epsilon for error checking
 DO_PLOT = False
-print "Plotting:",DO_PLOT
+print "Plotting:", DO_PLOT
+
 
 def test_eq(a, b):
     assert abs(a - b) <= EPS
 
 
 def vector_length(pa, pb):
-    return sympy.sqrt((pa.x - pb.x) ** 2 + (pa.y - pb.y) ** 2)
+    return math.sqrt((pa.x - pb.x) ** 2 + (pa.y - pb.y) ** 2)
 
 
 def get_angle_between_3_points(pc, p1, p2):
@@ -54,35 +53,19 @@ def f_top_arc(x, C, r):
         @param C circle mid point
         @param r radius
     """
-    y = C.y + (sympy.sqrt(r ** 2 - (x - C.x) ** 2))
-    if abs(complex(y).imag) > 0.:
-        return 0.
+    x = r ** 2 - (x - C.x) ** 2
+    if x >= 0:
+        return C.y + (math.sqrt(x))
     else:
-        return float(y)
+        return 0.
 
 
 def f_bottom_arc(x, C, r):
-    y = C.y - (sympy.sqrt(r ** 2 - (x - C.x) ** 2))
-    if abs(complex(y).imag) > 0.:
-        return 0.
+    x = r ** 2 - (x - C.x) ** 2
+    if x >= 0:
+        return C.y - (math.sqrt(x))
     else:
-        return y
-
-
-def integrate_arc_top(C, r, a, b):
-    return quad(lambda z: f_top_arc(z, C, r), a, b)[0]
-
-
-def integrate_arc_bottom(C, r, a, b):
-    return quad(lambda z: f_bottom_arc(z, C, r), a, b)[0]
-
-
-def integrate_line(h, a, b):
-    return quad(lambda z: f_line(z, h), a, b)[0]
-
-
-def integrate_slope(x1, y1, x2, y2, a, b):
-    return quad(lambda z: f_slope(z, x1, y1, x2, y2), a, b)[0]
+        return 0.
 
 
 def apply_slice_limits(a, b):

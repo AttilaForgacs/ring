@@ -12,6 +12,7 @@ import __builtin__
 from itertools import chain
 import argparse
 import time
+
 ctx = tools.load_profiles_lookup_table({})
 
 
@@ -85,11 +86,10 @@ def process_pr(pr):
                 # not enough data, skip
                 continue
 
-
             model = model_ref(params=parameter, context=tools.Context())
             model.calculate_intersections()
 
-            print resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.
+            #print resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.
 
 
             step = 0.1
@@ -100,11 +100,12 @@ def process_pr(pr):
                 __builtin__._fr = f
                 __builtin__._to = f + step
                 vol, hei = model.get_volume()
+                if vol < 0: vol = 0.
+                if hei < 0: hei = 0.
                 _volumes.append(float(vol))
                 _heights.append(float(hei))
 
-            '''
-            _heights[-1] = 0 # trim the sunci
+            _heights[-1] = 0
 
             ringwriter.writerow(
                 [CF / 10.] +
@@ -112,9 +113,9 @@ def process_pr(pr):
                 list(itertools.chain(*zip(_volumes, _heights)))
             )
             csvfile.flush()
-            '''
 
     csvfile.close()
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
