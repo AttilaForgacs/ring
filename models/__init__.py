@@ -31,3 +31,5 @@ from mTR5 import TR5
 from mTR7 import TR7
 from mTR13 import TR13
 from mTR213 import TR213
+from mTR20 import TR20
+from mTR170 import TR170

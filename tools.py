@@ -17,7 +17,7 @@ P = namedtuple('Point', ['x', 'y'])
 
 INTEGRATE_STEP = 0.0001
 EPS = 1e-5  #epsilon for error checking
-DO_PLOT = False
+DO_PLOT = True
 print "Plotting:", DO_PLOT
 
 
@@ -274,7 +274,7 @@ def _2_circles_tangential_equations_constrained(c1, c2, var_name,
 
 class RingParams(object):
     def __str__(self):
-        return 'PR={} MDL={} RI={} W={} H={} R60={} R61={} R20={} R40={} R41={}'.format(
+        return 'PR={} MDL={} RI={} W={} H={} R60={} R61={} R20={} R40={} R41={} P1={} P2={} P3={}'.format(
             self.PROFILE,
             self.MODEL,
             self.RI,
@@ -285,6 +285,9 @@ class RingParams(object):
             self.R20,
             self.R40,
             self.R41,
+            self.P1,
+            self.P2,
+            self.P3,
         )
 
     def __init__(self, W=0, H=0, CF=0, PROFILE=''):
@@ -305,6 +308,10 @@ class RingParams(object):
         self.R20 = None
         self.R40 = None
         self.R41 = None
+
+        self.P1 = None
+        self.P2 = None
+        self.P3 = None
 
     def lookup_definition(self, ctx):
         mapping = ctx[self.PROFILE]

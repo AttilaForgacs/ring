@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="185cacfd-f7df-428f-a0e4-98745084fc1b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mTR170.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mTR20.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters/PR_001_Daten.xlsx" afterPath="$PROJECT_DIR$/parameters/PR_001_Daten.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/batch_calculator.py" afterPath="$PROJECT_DIR$/batch_calculator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/batch_em_all.sh" afterPath="$PROJECT_DIR$/batch_em_all.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mTR1.py" afterPath="$PROJECT_DIR$/models/mTR1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_volume.py" afterPath="$PROJECT_DIR$/main_volume.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ring.iml" afterPath="$PROJECT_DIR$/.idea/ring.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox_TR1-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox_TR1-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox_TR1.ipynb" afterPath="$PROJECT_DIR$/sandbox_TR1.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fd54a7d1-ab7b-46ba-9eff-7c98209e9645" name="New changelist" comment="" />
     <ignored path="ring.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="185cacfd-f7df-428f-a0e4-98745084fc1b" time="1380536545768" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ring$main_volume.coverage" NAME="main_volume Coverage Results" MODIFIED="1389296760384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -31,7 +44,56 @@
     <favorites_list name="ring" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="batch_calculator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/batch_calculator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3297">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_volume.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main_volume.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="19" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.70149255" vertical-offset="1467" max-vertical-offset="2190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mTR1.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/mTR1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="33" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="2430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_volumizer.ipynb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_volumizer.ipynb">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="241" column="39" selection-start="6738" selection-end="6874" vertical-scroll-proportion="-8.964286" vertical-offset="6979" max-vertical-offset="49560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="11250">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -61,27 +123,29 @@
         <option value="$PROJECT_DIR$/models/TR13.py" />
         <option value="$PROJECT_DIR$/volumizer.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py" />
-        <option value="$PROJECT_DIR$/main_volume.py" />
-        <option value="$PROJECT_DIR$/models/mTR1.py" />
         <option value="$PROJECT_DIR$/models/mTR2.py" />
         <option value="$PROJECT_DIR$/models/mTR3.py" />
         <option value="$PROJECT_DIR$/models/mTR4.py" />
         <option value="$PROJECT_DIR$/models/mTR7.py" />
         <option value="$PROJECT_DIR$/models/mTR213.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/models/mTR5.py" />
         <option value="$PROJECT_DIR$/models/mTR13.py" />
-        <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/batch_calculator.py" />
+        <option value="$PROJECT_DIR$/models/mTR20.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/models/mTR170.py" />
+        <option value="$PROJECT_DIR$/batch_em_all.sh" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/main_volume.py" />
+        <option value="$PROJECT_DIR$/models/mTR1.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="384" />
-    <option name="y" value="200" />
-    <option name="width" value="1152" />
-    <option name="height" value="800" />
+    <option name="x" value="-3" />
+    <option name="width" value="1686" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,16 +214,13 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.idesettings.debugger.python" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <PyConsoleSettings />
-    </option>
-    <option name="myDjangoConsoleState">
-      <PyConsoleSettings />
+      <console-settings />
     </option>
   </component>
   <component name="PyDebuggerOptionsProvider">
@@ -171,7 +232,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.batch_calculator">
+  <component name="RunManager" selected="Python.main_volume">
     <configuration default="false" name="volumizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,6 +339,51 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,7 +423,53 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ring" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -346,9 +498,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.batch_calculator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.solver" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main_volume" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main_volume" />
+        <item index="1" class="java.lang.String" itemvalue="Python.batch_calculator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.solver" />
         <item index="3" class="java.lang.String" itemvalue="Python.volumizer" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest apply_slice_limits" />
       </list>
@@ -399,24 +551,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="384" y="200" width="1152" height="800" extended-state="0" />
-    <editor active="false" />
+    <frame x="-3" y="0" width="1686" height="1052" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.749694" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2486911" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250306" sideWeight="0.6717949" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52820516" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.749694" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -427,62 +579,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="finding leak" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="save" />
     <MESSAGE value="TR2 PR_014 PR_028 connected ring without vertical face" />
     <MESSAGE value="nice!" />
     <MESSAGE value="finding leak" />
+    <option name="LAST_COMMIT_MESSAGE" value="finding leak" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,129 +606,164 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/core/symbol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="295" column="48" selection-start="8671" selection-end="8680" vertical-scroll-proportion="-6.3648067" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile_lookup.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="347" selection-end="354" vertical-scroll-proportion="0.09555984" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7/__obsolete____circles_equations.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="29" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-7.84" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/ipdb/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="4" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/core/expr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="0" selection-start="7844" selection-end="7844" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="26" selection-start="6774" selection-end="6774" vertical-scroll-proportion="-0.76816237" />
+        <state line="229" column="26" selection-start="6774" selection-end="6774" vertical-scroll-proportion="-0.76816237" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/itertools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="8" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.33272395" />
+        <state line="100" column="8" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.33272395" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/solvers/solvers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1294" column="32" selection-start="46668" selection-end="46668" vertical-scroll-proportion="0.24188311">
+        <state line="1294" column="32" selection-start="46668" selection-end="46668" vertical-scroll-proportion="0.24188311" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/utilities/iterables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="405" column="42" selection-start="12252" selection-end="12273" vertical-scroll-proportion="0.45616883" />
+        <state line="405" column="42" selection-start="12252" selection-end="12273" vertical-scroll-proportion="0.45616883" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/numpy/core/function_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
+        <state line="5" column="4" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sympy/solvers/polysys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1480" column="0" selection-start="59057" selection-end="59057" vertical-scroll-proportion="0.7532051" />
+        <state line="1480" column="0" selection-start="59057" selection-end="59057" vertical-scroll-proportion="0.7532051" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/scipy/integrate/quadpack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="4" selection-start="6488" selection-end="6488" vertical-scroll-proportion="0.0" />
+        <state line="133" column="4" selection-start="6488" selection-end="6488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools_saved.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-0.98717946" />
+        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-0.98717946" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/operator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="601" column="12" selection-start="15294" selection-end="15294" vertical-scroll-proportion="0.6785714" />
+        <state line="601" column="12" selection-start="15294" selection-end="15294" vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/pymodules/python2.7/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2823" column="4" selection-start="90661" selection-end="90661" vertical-scroll-proportion="1.6025641" />
+        <state line="2823" column="4" selection-start="90661" selection-end="90661" vertical-scroll-proportion="1.6025641" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="24" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0" />
+        <state line="110" column="24" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" />
+        <state line="22" column="17" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="23" selection-start="2726" selection-end="2726" vertical-scroll-proportion="0.8230519" />
+        <state line="114" column="23" selection-start="2726" selection-end="2726" vertical-scroll-proportion="0.8230519" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mTR5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="27" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.63461536" />
+        <state line="101" column="27" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.63461536" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_volume.py">
+    <entry file="file://$PROJECT_DIR$/get_volumizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="326" selection-end="346" vertical-scroll-proportion="0.0" />
+        <state line="82" column="35" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR213.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/gc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="4" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="667" column="8" selection-start="20604" selection-end="20604" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR13.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR20.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="65" selection-start="1739" selection-end="1739" vertical-scroll-proportion="1.0627531" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="400" selection-end="400" vertical-scroll-proportion="0.4115884" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.7122877" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mTR170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="24" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.47672066" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="0" selection-start="15271" selection-end="15271" vertical-scroll-proportion="0.37651822" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/batch_em_all.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="75" selection-end="77" vertical-scroll-proportion="0.18581419" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2978" column="4" selection-start="95064" selection-end="95064" vertical-scroll-proportion="0.33333334" vertical-offset="89139" max-vertical-offset="110370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="11250">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_volumizer.ipynb">
@@ -632,59 +771,30 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="28" selection-start="3310" selection-end="3310" vertical-scroll-proportion="-31.6" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_volumizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="35" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="237" selection-end="243" vertical-scroll-proportion="-0.3672496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR213.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/gc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/348993582/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="667" column="8" selection-start="20604" selection-end="20604" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/batch_calculator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="29" selection-start="3257" selection-end="3257" vertical-scroll-proportion="1.0466101" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mTR13.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="241" column="39" selection-start="6738" selection-end="6874" vertical-scroll-proportion="-8.964286" vertical-offset="6979" max-vertical-offset="49560">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solver.py">
+    <entry file="file://$PROJECT_DIR$/batch_calculator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="0" selection-end="15605" vertical-scroll-proportion="0.0" />
+        <state line="19" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3297">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
+    <entry file="file://$PROJECT_DIR$/models/mTR1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="17" selection-start="8605" selection-end="8605" vertical-scroll-proportion="0.78732544" />
+        <state line="22" column="33" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_volume.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="19" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.70149255" vertical-offset="1467" max-vertical-offset="2190">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

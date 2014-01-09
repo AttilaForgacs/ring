@@ -16,11 +16,11 @@ class TR1(BaseModel):
 
         c['lc_R'] = p.R40
         c['lc_CX'] = p.R40
-        c['lc_CY'] = p.RI + p.R40
+        c['lc_CY'] = p.RI + p.H - p.R40
 
         c['rc_R'] = p.R40
         c['rc_CX'] = p.W - p.R40
-        c['rc_CY'] = p.RI + p.R40
+        c['rc_CY'] = p.RI + p.H - p.R40
 
 
     def get_volume(self):

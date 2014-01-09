@@ -24,16 +24,16 @@ from models import *
 # RI=inner ring radius
 
 profiles_definiton = load_profiles_lookup_table({})
-ring_config = RingParams(W=5., H=1.5, CF=56., PROFILE='PR_001')
+ring_config = RingParams(W=6., H=2., CF=56., PROFILE='PR_007')
 ring_config.lookup_definition(profiles_definiton)
 
 # override ########
-ring_config.W = 2.5
-ring_config.H = 1.
+# ring_config.W = 2.5
+# ring_config.H = 1.
 ring_config.R60 = 0.
-ring_config.R61 = round(2.17718474478179, 3)
-ring_config.R40 = round(0.35,3)
-ring_config.R41 = round(0.455863932713471,3)
+ring_config.R61 = 0.
+ring_config.R40 = 0.5
+ring_config.R20 = ring_config.R41 = 0.20
 
 
 print 'Using configuration:'
@@ -60,3 +60,9 @@ print solutions
 volume = model.get_volume()
 
 print 'Volume:', volume
+
+from pylab import *
+
+plt.savefig('/home/attila/Desktop/RING.png')
+plt.clf()
+plt.close()

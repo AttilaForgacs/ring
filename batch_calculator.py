@@ -15,6 +15,8 @@ import time
 
 ctx = tools.load_profiles_lookup_table({})
 
+USE_SINGLE_FILE_PARAMETER = True
+
 
 def pr_to_tr(pr):
     '''
@@ -24,19 +26,34 @@ def pr_to_tr(pr):
     return ctx[pr]['TR_CODE']
 
 
-def process_pr(pr):
-    excelfile = './parameters/%s_Daten.xlsx' % pr
-    assert open(excelfile)
-    csvfile = open('/home/attila/ringdong/%s.csv' % pr, 'wb+')
+def zerobased_index(n):
+    n = n[3:]
+    return int(n, 10) - 1
 
-    ringwriter = csv.writer(csvfile, delimiter=',',
+
+def process_pr(pr):
+    out_csv_file = open('/media/attila/terra/ring_csv/%s.csv' % pr, 'wb+')
+
+    ringwriter = csv.writer(out_csv_file, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
+    # TR lookup
     tr_code = pr_to_tr(pr)
     assert len(tr_code) > 2
     model_ref = models.__dict__[tr_code]
-    book = xlrd.open_workbook(excelfile)
-    sheet = book.sheet_by_index(0)
+
+    # Input excel: collection 1-24.xlsx
+    if USE_SINGLE_FILE_PARAMETER:
+        excelfile = './parameters/PR_001-PR_024.xlsx'
+        assert open(excelfile)
+        book = xlrd.open_workbook(excelfile)
+        sheet = book.sheet_by_index(zerobased_index(pr))
+    # Input excel: many files...
+    else:
+        excelfile = './parameters/%s_Daten.xlsx' % pr
+        assert open(excelfile)
+        book = xlrd.open_workbook(excelfile)
+        sheet = book.sheet_by_index(0)
 
     parameters = collections.OrderedDict()
 
@@ -61,7 +78,9 @@ def process_pr(pr):
         ))
     )
 
-    for CF in xrange(460, 760, 5):
+    all_cirumferences = xrange(460, 760, 5)
+
+    for CF in all_cirumferences:
         for i in range(0, sheet.nrows - 1):
 
             w = parameters['R51'][i]
@@ -100,8 +119,8 @@ def process_pr(pr):
                 __builtin__._fr = f
                 __builtin__._to = f + step
                 vol, hei = model.get_volume()
-                if vol < 0: vol = 0.
-                if hei < 0: hei = 0.
+                if vol < 0.0000001: vol = 0.
+                if hei < 0.0000001: hei = 0.
                 _volumes.append(float(vol))
                 _heights.append(float(hei))
 
@@ -112,14 +131,14 @@ def process_pr(pr):
                 list(map(lambda k: parameters[k][i], parameters.keys())) +
                 list(itertools.chain(*zip(_volumes, _heights)))
             )
-            csvfile.flush()
+            out_csv_file.flush()
 
-    csvfile.close()
+    out_csv_file.close()
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Ring Slicer 0.2b'
+        description='Ring Slicer 0.3b'
     )
 
     parser.add_argument(action="store", dest="profile_name", type=str,
