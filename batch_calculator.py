@@ -119,8 +119,8 @@ def process_pr(pr):
                 __builtin__._fr = f
                 __builtin__._to = f + step
                 vol, hei = model.get_volume()
-                if vol < 0.0000001: vol = 0.
-                if hei < 0.0000001: hei = 0.
+                if vol < 0.0000000000001: vol = 0.
+                if hei < 0.0000000000001: hei = 0.
                 _volumes.append(float(vol))
                 _heights.append(float(hei))
 

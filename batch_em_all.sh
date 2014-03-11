@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python batch_calculator.py PR_007 &
+python batch_calculator.py PR_006 &
 
 
 #for i in `seq 10 24`;

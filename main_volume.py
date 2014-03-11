@@ -23,46 +23,49 @@ from models import *
 # W=width H=height
 # RI=inner ring radius
 
+
 profiles_definiton = load_profiles_lookup_table({})
-ring_config = RingParams(W=6., H=2., CF=56., PROFILE='PR_007')
-ring_config.lookup_definition(profiles_definiton)
 
-# override ########
-# ring_config.W = 2.5
-# ring_config.H = 1.
-ring_config.R60 = 0.
-ring_config.R61 = 0.
-ring_config.R40 = 0.5
-ring_config.R20 = ring_config.R41 = 0.20
+for i in [6]:
+    ring_config = RingParams(W=6.0, H=2., CF=64., PROFILE='PR_0%02d'%i)
+    ring_config.lookup_definition(profiles_definiton)
+
+    # override ########
+    # ring_config.W = 2.5
+    # ring_config.H = 1.
+    # ring_config.R60 = 0.
+    # ring_config.R61 = 0.
+    # ring_config.R40 = 0.5
+    # ring_config.R20 = ring_config.R41 = 0.20
 
 
-print 'Using configuration:'
-print ring_config
+    print 'Using configuration:'
+    print ring_config
 
-context = Context()
-model = globals()[ring_config.MODEL](params=ring_config, context=context)
-model.calculate_intersections()
+    context = Context()
+    model = globals()[ring_config.MODEL](params=ring_config, context=context)
+    model.calculate_intersections()
 
-print context
-print 'vars:'
-print model.context.variables
-print
-print
-print 'eq:'
-print model.context.equations
-print
-print
+    print context
+    print 'vars:'
+    print model.context.variables
+    print
+    print
+    print 'eq:'
+    print model.context.equations
+    print
+    print
 
-solutions = model.solve()
+    solutions = model.solve()
 
-print solutions
+    print solutions
 
-volume = model.get_volume()
+    volume = model.get_volume()
 
-print 'Volume:', volume
+    print 'Volume:', volume
 
-from pylab import *
+    from pylab import *
 
-plt.savefig('/home/attila/Desktop/RING.png')
-plt.clf()
-plt.close()
+    plt.savefig('/home/attila/Desktop/RING_0%02d.png'%i)
+    plt.clf()
+    plt.close()
